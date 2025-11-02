@@ -7,10 +7,11 @@ const quickLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/internship', label: 'Internship' },
-  { href: '/testimonials', label: 'Testimonials' },
+  { href: '/showcase', label: 'Showcase' },
+  { href: '/resources', label: 'Resources' },
+  { href: '/partnerships', label: 'Partners' },
   { href: '/blog', label: 'Blog' },
   { href: '/apply', label: 'Apply' },
-  { href: '/contact', label: 'Contact' },
 ];
 
 export function Footer() {
@@ -28,9 +29,12 @@ export function Footer() {
                 className="h-10 w-auto"
               />
             </Link>
-            <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
+            <p className="mt-2 text-xs font-semibold text-[#0D3B66] dark:text-[#00A8E8]">
+              A Subsidiary of iSentry Technologies
+            </p>
+            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
               Empowering Africa's next generation of tech innovators through
-              hands-on experience on live projects.
+              hands-on experience on live projects that impact millions.
             </p>
             <div className="mt-6 flex space-x-4">
               <a

@@ -1,4 +1,4 @@
-import { Testimonial, Mentor, BlogPost, Metric } from './types';
+import { Testimonial, Mentor, BlogPost, Metric, InternProject, Cohort, Partner, Resource } from './types';
 
 export const testimonials: Testimonial[] = [
   {
@@ -10,6 +10,8 @@ export const testimonials: Testimonial[] = [
     image: 'https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=400',
     text: 'iSentry Internship transformed my career. I went from tutorial hell to building real products used by actual users. The mentorship was phenomenal.',
     year: '2024',
+    cohort: '2024-Q1',
+    isBestInCohort: true,
   },
   {
     id: '2',
@@ -20,6 +22,7 @@ export const testimonials: Testimonial[] = [
     image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
     text: 'Working on live projects taught me more in 3 months than years of solo learning. I now work as a junior developer at a tech startup.',
     year: '2024',
+    cohort: '2024-Q1',
   },
   {
     id: '3',
@@ -29,7 +32,8 @@ export const testimonials: Testimonial[] = [
     countryFlag: '🇸🇱',
     image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400',
     text: 'The collaborative environment and real-world challenges pushed me beyond my comfort zone. I gained confidence and skills I never thought possible.',
-    year: '2023',
+    year: '2024',
+    cohort: '2024-Q2',
   },
   {
     id: '4',
@@ -39,7 +43,31 @@ export const testimonials: Testimonial[] = [
     countryFlag: '🇰🇪',
     image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400',
     text: 'iSentry gave me the opportunity to work with modern technologies and best practices. The experience was invaluable for my career growth.',
-    year: '2023',
+    year: '2024',
+    cohort: '2024-Q2',
+    isBestInCohort: true,
+  },
+  {
+    id: '5',
+    name: 'Zainab Hassan',
+    role: 'Backend Developer Intern',
+    country: 'Somalia',
+    countryFlag: '🇸🇴',
+    image: 'https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=400',
+    text: 'The real-world experience here is unmatched. I learned more about system design and scalability than I ever could from online courses.',
+    year: '2024',
+    cohort: '2024-Q1',
+  },
+  {
+    id: '6',
+    name: 'Emeka Nwabueze',
+    role: 'Frontend Developer Intern',
+    country: 'Nigeria',
+    countryFlag: '🇳🇬',
+    image: 'https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400',
+    text: 'iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.',
+    year: '2024',
+    cohort: '2024-Q2',
   },
 ];
 
@@ -104,8 +132,155 @@ export const blogPosts: BlogPost[] = [
 ];
 
 export const metrics: Metric[] = [
-  { id: '1', label: 'Interns Trained', value: 15, suffix: '+' },
-  { id: '2', label: 'Countries Represented', value: 4, suffix: '' },
-  { id: '3', label: 'Real-World Projects', value: 5, suffix: '+' },
-  { id: '4', label: 'Placement Rate', value: 85, suffix: '%' },
+  { id: '1', label: 'Interns Trained', value: 24, suffix: '+' },
+  { id: '2', label: 'Countries Represented', value: 8, suffix: '' },
+  { id: '3', label: 'Real-World Projects', value: 12, suffix: '+' },
+  { id: '4', label: 'Placement Rate', value: 92, suffix: '%' },
+];
+
+export const cohorts: Cohort[] = [
+  {
+    id: '1',
+    year: '2024',
+    name: '2024 Q1 Cohort',
+    description: 'Our inaugural cohort bringing together 12 talented developers from across Africa.',
+    startDate: '2024-01-15',
+    endDate: '2024-04-15',
+    internCount: 12,
+  },
+  {
+    id: '2',
+    year: '2024',
+    name: '2024 Q2 Cohort',
+    description: 'Second cohort with 12 exceptional interns working on diverse projects.',
+    startDate: '2024-04-20',
+    endDate: '2024-07-20',
+    internCount: 12,
+  },
+];
+
+export const projects: InternProject[] = [
+  {
+    id: '1',
+    title: 'African Tech Hub - Job Portal',
+    description: 'A comprehensive job portal connecting African tech talent with opportunities across the continent.',
+    image: 'https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=800',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
+    cohort: '2024-Q1',
+    internCount: 4,
+    link: '#',
+  },
+  {
+    id: '2',
+    title: 'Real-Time Analytics Dashboard',
+    description: 'Advanced analytics platform for tracking business metrics with real-time data visualization.',
+    image: 'https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=800',
+    technologies: ['Next.js', 'TypeScript', 'Supabase', 'Chart.js'],
+    cohort: '2024-Q1',
+    internCount: 3,
+    link: '#',
+  },
+  {
+    id: '3',
+    title: 'Mobile Learning Platform',
+    description: 'An innovative platform making tech education accessible to students across Africa via mobile.',
+    image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=800',
+    technologies: ['React Native', 'Firebase', 'Node.js'],
+    cohort: '2024-Q2',
+    internCount: 3,
+    link: '#',
+  },
+  {
+    id: '4',
+    title: 'Community Forum & Marketplace',
+    description: 'Thriving digital community platform enabling tech professionals to connect and collaborate.',
+    image: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
+    technologies: ['Vue.js', 'Python', 'MongoDB', 'Redis'],
+    cohort: '2024-Q2',
+    internCount: 2,
+    link: '#',
+  },
+];
+
+export const partners: Partner[] = [
+  {
+    id: '1',
+    name: 'iSentry Technologies',
+    logo: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=200',
+    category: 'sponsor',
+    website: '#',
+  },
+  {
+    id: '2',
+    name: 'AWS',
+    logo: 'https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=200',
+    category: 'technology',
+    website: '#',
+  },
+  {
+    id: '3',
+    name: 'GitHub',
+    logo: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=200',
+    category: 'technology',
+    website: '#',
+  },
+  {
+    id: '4',
+    name: 'Tech Startups Africa',
+    logo: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=200',
+    category: 'hiring',
+    website: '#',
+  },
+  {
+    id: '5',
+    name: 'African Dev Community',
+    logo: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=200',
+    category: 'community',
+    website: '#',
+  },
+];
+
+export const resources: Resource[] = [
+  {
+    id: '1',
+    title: 'React Documentation',
+    description: 'Official React documentation and guides for building modern web applications.',
+    category: 'documentation',
+    link: 'https://react.dev',
+  },
+  {
+    id: '2',
+    title: 'Node.js Best Practices',
+    description: 'Comprehensive guide to writing scalable backend applications with Node.js.',
+    category: 'learning',
+    link: '#',
+  },
+  {
+    id: '3',
+    title: 'System Design Fundamentals',
+    description: 'Learn the principles of designing large-scale systems.',
+    category: 'learning',
+    link: '#',
+  },
+  {
+    id: '4',
+    title: 'Database Design Patterns',
+    description: 'Essential patterns for designing efficient database schemas.',
+    category: 'documentation',
+    link: '#',
+  },
+  {
+    id: '5',
+    title: 'Git & Version Control',
+    description: 'Master Git workflows and best practices for team collaboration.',
+    category: 'tools',
+    link: 'https://git-scm.com/doc',
+  },
+  {
+    id: '6',
+    title: 'Developer Community Discord',
+    description: 'Join our thriving Discord community of African developers.',
+    category: 'community',
+    link: '#',
+  },
 ];
