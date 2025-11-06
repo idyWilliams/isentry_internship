@@ -115,8 +115,7 @@ export const mentors: Mentor[] = [
     name: "Steven Oluwaseyi",
     role: "QA Teasting",
     bio: "Backend specialist with expertise in API design, database optimization, and cloud deployment. Dedicated to teaching best practices in software architecture.",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: victor,
     linkedin: "https://linkedin.com/in/emmanuel-nduka",
   },
   {
@@ -132,8 +131,7 @@ export const mentors: Mentor[] = [
     name: "Ummi",
     role: "QA Teasting",
     bio: "Backend specialist with expertise in API design, database optimization, and cloud deployment. Dedicated to teaching best practices in software architecture.",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: wangui,
     linkedin: "https://linkedin.com/in/emmanuel-nduka",
   },
 ];
