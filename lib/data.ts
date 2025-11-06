@@ -1,4 +1,10 @@
 import { Testimonial, Mentor, BlogPost, Metric, InternProject, Cohort, Partner, Resource } from './types';
+import williams from "./../public/images/team/williams.webp";
+import timi from "./../public/images/team/Photo - Timilehin Abegunde.png"
+import akanimo from "./../public/images/team/Akanimo.webp"
+import wangui from "./../public/images/team/Wangui.jpg"
+import victor from "./../public/images/team/Victor-udo.jpeg"
+
 
 export const testimonials: Testimonial[] = [
   {
@@ -6,7 +12,7 @@ export const testimonials: Testimonial[] = [
     name: 'Amina Okafor',
     role: 'Frontend Developer Intern',
     country: 'Nigeria',
-    countryFlag: '🇳🇬',
+    countryFlag: 'ng',
     image: 'https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=400',
     text: 'iSentry Internship transformed my career. I went from tutorial hell to building real products used by actual users. The mentorship was phenomenal.',
     year: '2024',
@@ -18,7 +24,7 @@ export const testimonials: Testimonial[] = [
     name: 'Kwame Mensah',
     role: 'Full Stack Developer Intern',
     country: 'Ghana',
-    countryFlag: '🇬🇭',
+    countryFlag: 'gh',
     image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
     text: 'Working on live projects taught me more in 3 months than years of solo learning. I now work as a junior developer at a tech startup.',
     year: '2024',
@@ -29,7 +35,7 @@ export const testimonials: Testimonial[] = [
     name: 'Aisha Kamara',
     role: 'UI/UX Developer Intern',
     country: 'Sierra Leone',
-    countryFlag: '🇸🇱',
+    countryFlag: 'sl',
     image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400',
     text: 'The collaborative environment and real-world challenges pushed me beyond my comfort zone. I gained confidence and skills I never thought possible.',
     year: '2024',
@@ -40,7 +46,7 @@ export const testimonials: Testimonial[] = [
     name: 'David Omondi',
     role: 'Backend Developer Intern',
     country: 'Kenya',
-    countryFlag: '🇰🇪',
+    countryFlag: 'ke',
     image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400',
     text: 'iSentry gave me the opportunity to work with modern technologies and best practices. The experience was invaluable for my career growth.',
     year: '2024',
@@ -52,7 +58,7 @@ export const testimonials: Testimonial[] = [
     name: 'Zainab Hassan',
     role: 'Backend Developer Intern',
     country: 'Somalia',
-    countryFlag: '🇸🇴',
+    countryFlag: 'so',
     image: 'https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=400',
     text: 'The real-world experience here is unmatched. I learned more about system design and scalability than I ever could from online courses.',
     year: '2024',
@@ -63,7 +69,7 @@ export const testimonials: Testimonial[] = [
     name: 'Emeka Nwabueze',
     role: 'Frontend Developer Intern',
     country: 'Nigeria',
-    countryFlag: '🇳🇬',
+    countryFlag: 'ng',
     image: 'https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400',
     text: 'iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.',
     year: '2024',
@@ -73,28 +79,62 @@ export const testimonials: Testimonial[] = [
 
 export const mentors: Mentor[] = [
   {
-    id: '1',
-    name: 'Idorenyin Williams',
-    role: 'Founder & Lead Mentor',
-    bio: 'Frontend engineering expert and visionary leader passionate about empowering African tech talent. With over 8 years of experience building scalable web applications, Idorenyin founded iSentry Internship to bridge the gap between learning and professional practice.',
-    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600',
-    linkedin: 'https://linkedin.com/in/idorenyin-williams',
+    id: "1",
+    name: "Idorenyin Williams",
+    role: "Backend Mentor",
+    bio: "Frontend engineering expert and visionary leader passionate about empowering African tech talent. With over 8 years of experience building scalable web applications, Idorenyin founded iSentry Internship to bridge the gap between learning and professional practice.",
+    image: williams,
+    linkedin: "https://linkedin.com/in/idorenyin-williams",
   },
   {
-    id: '2',
-    name: 'Chioma Adewale',
-    role: 'Senior Full Stack Mentor',
-    bio: 'Experienced full-stack developer specializing in React, Node.js, and cloud architecture. Passionate about teaching and helping interns build production-ready applications.',
-    image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=600',
-    linkedin: 'https://linkedin.com/in/chioma-adewale',
+    id: "2",
+    name: "Timilehin Abegunde",
+    role: "Frontend Mentor",
+    bio: "Experienced full-stack developer specializing in React, Node.js, and cloud architecture. Passionate about teaching and helping interns build production-ready applications.",
+    image: timi,
+    linkedin: "https://linkedin.com/in/chioma-adewale",
   },
   {
-    id: '3',
-    name: 'Emmanuel Nduka',
-    role: 'Backend & DevOps Mentor',
-    bio: 'Backend specialist with expertise in API design, database optimization, and cloud deployment. Dedicated to teaching best practices in software architecture.',
-    image: 'https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=600',
-    linkedin: 'https://linkedin.com/in/emmanuel-nduka',
+    id: "3",
+    name: "Akanimo Ekong",
+    role: "Socials and Graphics Design",
+    bio: "Backend specialist with expertise in API design, database optimization, and cloud deployment. Dedicated to teaching best practices in software architecture.",
+    image: akanimo,
+    linkedin: "https://linkedin.com/in/emmanuel-nduka",
+  },
+  {
+    id: "4",
+    name: "Wangui Njoroge",
+    role: "Product Design",
+    bio: "Backend specialist with expertise in API design, database optimization, and cloud deployment. Dedicated to teaching best practices in software architecture.",
+    image: wangui,
+    linkedin: "https://ke.linkedin.com/in/wangui-njoroge-639378181",
+  },
+  {
+    id: "5",
+    name: "Steven Oluwaseyi",
+    role: "QA Teasting",
+    bio: "Backend specialist with expertise in API design, database optimization, and cloud deployment. Dedicated to teaching best practices in software architecture.",
+    image:
+      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=600",
+    linkedin: "https://linkedin.com/in/emmanuel-nduka",
+  },
+  {
+    id: "6",
+    name: "Victor Udo",
+    role: "QA Testing",
+    bio: "Backend specialist with expertise in API design, database optimization, and cloud deployment. Dedicated to teaching best practices in software architecture.",
+    image: victor,
+    linkedin: "http://linkedin.com/in/victor-udo-55136b2b2",
+  },
+  {
+    id: "7",
+    name: "Ummi",
+    role: "QA Teasting",
+    bio: "Backend specialist with expertise in API design, database optimization, and cloud deployment. Dedicated to teaching best practices in software architecture.",
+    image:
+      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=600",
+    linkedin: "https://linkedin.com/in/emmanuel-nduka",
   },
 ];
 
@@ -162,7 +202,7 @@ export const cohorts: Cohort[] = [
 export const projects: InternProject[] = [
   {
     id: '1',
-    title: 'African Tech Hub - Job Portal',
+    title: 'Porker hut',
     description: 'A comprehensive job portal connecting African tech talent with opportunities across the continent.',
     image: 'https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=800',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
@@ -172,7 +212,7 @@ export const projects: InternProject[] = [
   },
   {
     id: '2',
-    title: 'Real-Time Analytics Dashboard',
+    title: 'Goldies',
     description: 'Advanced analytics platform for tracking business metrics with real-time data visualization.',
     image: 'https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=800',
     technologies: ['Next.js', 'TypeScript', 'Supabase', 'Chart.js'],
@@ -233,7 +273,7 @@ export const partners: Partner[] = [
   },
   {
     id: '5',
-    name: 'African Dev Community',
+    name: 'BYS',
     logo: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=200',
     category: 'community',
     website: '#',

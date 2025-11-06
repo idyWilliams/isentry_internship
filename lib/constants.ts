@@ -14,8 +14,8 @@ export const SOCIAL_LINKS = {
 } as const;
 
 export const CONTACT_INFO = {
-  email: 'isentryinternship@gmail.com',
-  location: 'Lagos, Nigeria (Remote Program)',
+  email: "internship@isentrytechnologies.com",
+  location: "Lagos, Nigeria (Remote Program)",
 } as const;
 
-export const LOGO_URL = 'https://isentrytechnologies.com/images/isentry-logo.png';
+export const LOGO_URL = "isentry.svg";

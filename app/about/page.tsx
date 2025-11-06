@@ -1,32 +1,49 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { Target, Heart, TrendingUp } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
-import { MentorCard } from '@/components/mentor-card';
-import { mentors } from '@/lib/data';
+import { motion } from "framer-motion";
+import { Target, Heart, TrendingUp } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { MentorCard } from "@/components/mentor-card";
+import { mentors } from "@/lib/data";
+// import { Image } from "next-image";
 
 const timeline = [
-  { year: '2023', event: 'Program founded', description: 'iSentry Internship launches to empower African tech talent' },
-  { year: '2024', event: 'Expanded across Africa', description: 'Reached developers in 4 countries with multiple successful cohorts' },
-  { year: '2025', event: 'New cohort launch', description: 'Opening applications for our most ambitious cohort yet' },
+  {
+    year: "2023",
+    event: "Program founded",
+    description: "iSentry Internship launches to empower African tech talent",
+  },
+  {
+    year: "2024",
+    event: "Expanded across Africa",
+    description:
+      "Reached developers in 4 countries with multiple successful cohorts",
+  },
+  {
+    year: "2025",
+    event: "New cohort launch",
+    description: "Opening applications for our most ambitious cohort yet",
+  },
 ];
 
 const values = [
   {
     icon: Target,
-    title: 'Our Mission',
-    description: 'To bridge the gap between learning and doing in Africa\'s tech ecosystem by providing hands-on experience on real-world projects.',
+    title: "Our Mission",
+    description: `At Isentry, our mission is to lead technological advancement,
+      creating a world where businesses and individuals can thrive through innovation.`,
   },
   {
     icon: Heart,
-    title: 'Our Values',
-    description: 'Excellence, mentorship, collaboration, and a commitment to elevating African talent on the global stage.',
+    title: "Our Values",
+    description:
+      "Excellence, mentorship, collaboration, and a commitment to elevating African talent on the global stage.",
   },
   {
     icon: TrendingUp,
-    title: 'Our Vision',
-    description: 'To become Africa\'s leading tech internship program, creating a pipeline of world-class developers across the continent.',
+    title: "Our Vision",
+    description: `At Isentry, our mission is to drive technological advancement
+      through two key pillars: delivering innovative software solutions and nurturing tech talent.`,
   },
 ];
 
@@ -45,7 +62,8 @@ export default function About() {
               About iSentry Internship
             </h1>
             <p className="text-lg text-white/90 md:text-xl">
-              Transforming Africa's tech landscape through practical, mentorship-driven learning experiences.
+              Transforming Africa&apos;s tech landscape through practical,
+              mentorship-driven learning experiences.
             </p>
           </motion.div>
         </div>
@@ -94,7 +112,12 @@ export default function About() {
               Our Connection to iSentry Technologies
             </h2>
             <p className="mx-auto max-w-3xl text-gray-600 dark:text-gray-400">
-              iSentry Internship is an initiative by iSentry Technologies, a leading software development company committed to building innovative solutions while nurturing the next generation of African tech talent. Through this program, we share our industry expertise, project experience, and commitment to excellence with aspiring developers across the continent.
+              iSentry Internship is an initiative by iSentry Technologies, a
+              leading software development company committed to building
+              innovative solutions while nurturing the next generation of
+              African tech talent. Through this program, we share our industry
+              expertise, project experience, and commitment to excellence with
+              aspiring developers across the continent.
             </p>
           </motion.div>
         </div>
@@ -113,7 +136,8 @@ export default function About() {
               Our Story
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-400">
-              From a vision to reality — building Africa's tech future together.
+              From a vision to reality — building Africa&apos;s tech future
+              together.
             </p>
           </motion.div>
 
