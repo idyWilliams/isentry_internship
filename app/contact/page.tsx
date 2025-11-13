@@ -65,7 +65,7 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-lg text-white/90 md:text-xl">
-              Have questions about the program? We'd love to hear from you.
+              Have questions about the program? We&apos;d love to hear from you.
             </p>
           </motion.div>
         </div>

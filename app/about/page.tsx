@@ -30,8 +30,7 @@ const values = [
   {
     icon: Target,
     title: "Our Mission",
-    description: `At Isentry, our mission is to lead technological advancement,
-      creating a world where businesses and individuals can thrive through innovation.`,
+    description: `To bridge the gap between learning and doing in Africa's tech ecosystem by providing hands-on experience on real-world projects.`,
   },
   {
     icon: Heart,
@@ -42,8 +41,7 @@ const values = [
   {
     icon: TrendingUp,
     title: "Our Vision",
-    description: `At Isentry, our mission is to drive technological advancement
-      through two key pillars: delivering innovative software solutions and nurturing tech talent.`,
+    description: `To become Africa's leading tech internship program, creating a pipeline of world-class developers across the continent.`,
   },
 ];
 

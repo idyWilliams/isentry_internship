@@ -1,12 +1,12 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Albert_Sans } from 'next/font/google';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { ThemeProvider } from '@/components/theme-provider';
 import "flag-icons/css/flag-icons.min.css";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Albert_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'iSentry Internship | Empowering African Tech Talent',

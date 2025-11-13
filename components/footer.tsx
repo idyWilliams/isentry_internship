@@ -33,8 +33,8 @@ export function Footer() {
               A Subsidiary of iSentry Technologies
             </p>
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              Empowering Africa's next generation of tech innovators through
-              hands-on experience on live projects that impact millions.
+              Empowering Africa&apos;s next generation of tech innovators
+              through hands-on experience on live projects that impact millions.
             </p>
             <div className="mt-6 flex space-x-4">
               <a
@@ -95,8 +95,9 @@ export function Footer() {
               Contact
             </h3>
             <ul className="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <li>isentryinternship@gmail.com</li>
+              <Link href="">internship@isentrytechnologies.com</Link>
               <li>Lagos, Nigeria (Remote Program)</li>
+              
             </ul>
           </div>
         </div>
