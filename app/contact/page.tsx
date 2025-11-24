@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Linkedin, Twitter, Instagram, Github } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Twitter, Instagram, Github, Facebook, X } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -26,7 +26,7 @@ const contactMethods = [
 
 const socialLinks = [
   { icon: Linkedin, name: 'LinkedIn', url: SOCIAL_LINKS.linkedin },
-  { icon: Twitter, name: 'Twitter', url: SOCIAL_LINKS.twitter },
+  { icon: X, name: 'Twitter', url: SOCIAL_LINKS.x },
   { icon: Instagram, name: 'Instagram', url: SOCIAL_LINKS.instagram },
   { icon: Facebook, name: 'Facebook', url: SOCIAL_LINKS.facebook },
 ];

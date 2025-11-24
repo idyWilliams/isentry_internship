@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Linkedin, Twitter, Instagram, Github } from 'lucide-react';
+import { Linkedin, Twitter, Instagram, Github, Facebook, X } from 'lucide-react';
 import { LOGO_URL, SOCIAL_LINKS } from '@/lib/constants';
 
 const quickLinks = [
@@ -46,12 +46,12 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href={SOCIAL_LINKS.twitter}
+                href={SOCIAL_LINKS.x}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 transition-colors hover:text-[#00A8E8] dark:text-gray-400 dark:hover:text-[#00A8E8]"
               >
-                <Twitter className="h-5 w-5" />
+                <X className="h-5 w-5" />
               </a>
               <a
                 href={SOCIAL_LINKS.instagram}
@@ -62,12 +62,12 @@ export function Footer() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href={SOCIAL_LINKS.github}
+                href={SOCIAL_LINKS.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 transition-colors hover:text-[#00A8E8] dark:text-gray-400 dark:hover:text-[#00A8E8]"
               >
-                <Github className="h-5 w-5" />
+                <Facebook className="h-5 w-5" />
               </a>
             </div>
           </div>

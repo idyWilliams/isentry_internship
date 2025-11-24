@@ -12,7 +12,6 @@ import williams from "./../public/images/team/Williams.jpg";
 import timi from "./../public/images/team/Photo - Timilehin Abegunde.png";
 import akanimo from "./../public/images/team/Akanimo.webp";
 import wangui from "./../public/images/team/Wangui.jpg";
-import victor from "./../public/images/team/Victor-udo.jpeg";
 import ummi from "./../public/images/team/ummi.jpeg";
 import seun from "./../public/images/team/bamgbade.jpg";
 import steve from "./../public/images/team/Steven.jpeg";
@@ -137,14 +136,6 @@ export const mentors: Mentor[] = [
     linkedin: "https://linkedin.com/in/emmanuel-nduka",
   },
   {
-    id: "6",
-    name: "Victor Udo",
-    role: "QA Testing",
-    bio: "QA Engineer with 3 years of experience ensuring software quality through meticulous testing and process improvements. Skilled in designing and executing manual and automated test cases, identifying defects, and collaborating closely with developers and product teams to deliver reliable, high-performing applications.",
-    image: victor,
-    linkedin: "http://linkedin.com/in/victor-udo-55136b2b2",
-  },
-  {
     id: "7",
     name: "Ummi M Kallay",
     role: "Product Manager",
@@ -229,12 +220,12 @@ export const cohorts: Cohort[] = [
   },
   {
     id: "2",
-    year: "2024",
-    name: "2024 Q2 Cohort",
+    year: "2025",
+    name: "2025 Q2 Cohort",
     description:
       "Second cohort with 12 exceptional interns working on diverse projects.",
-    startDate: "2024-04-20",
-    endDate: "2024-07-20",
+    startDate: "2025-09-05",
+    endDate: "2025-12-20",
     internCount: 12,
   },
 ];

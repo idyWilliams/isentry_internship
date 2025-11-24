@@ -8,7 +8,7 @@ export const BRAND_COLORS = {
 
 export const SOCIAL_LINKS = {
   linkedin: 'https://linkedin.com/company/isentry-technologies',
-  twitter: 'https://x.com/isentrytech',
+  x: 'https://x.com/isentrytech',
   instagram: 'https://instagram.com/isentry.technologies',
   facebook: 'https://github.com/isentrytech',
 } as const;
