@@ -65,7 +65,7 @@ export interface Cohort {
 export interface Partner {
   id: string;
   name: string;
-  logo: string;
+  logo: StaticImageData;
   category: 'sponsor' | 'technology' | 'hiring' | 'community';
   website?: string;
 }

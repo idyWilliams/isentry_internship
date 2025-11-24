@@ -16,6 +16,7 @@ import victor from "./../public/images/team/Victor-udo.jpeg";
 import ummi from "./../public/images/team/ummi.jpeg";
 import seun from "./../public/images/team/bamgbade.jpg";
 import steve from "./../public/images/team/Steven.jpeg";
+import BSY from "./../public/images/team/BSY.jpg"
 
 export const testimonials: Testimonial[] = [
   {
@@ -293,35 +294,35 @@ export const partners: Partner[] = [
   {
     id: "1",
     name: "iSentry Technologies",
-    logo: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=200",
+    logo: BSY,
     category: "sponsor",
     website: "https://isentrytechnologies.com/",
   },
-  {
-    id: "2",
-    name: "AWS",
-    logo: "https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=200",
-    category: "technology",
-    website: "#",
-  },
-  {
-    id: "3",
-    name: "GitHub",
-    logo: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=200",
-    category: "technology",
-    website: "#",
-  },
-  {
-    id: "4",
-    name: "Tech Startups Africa",
-    logo: "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=200",
-    category: "hiring",
-    website: "#",
-  },
+  // {
+  //   id: "2",
+  //   name: "AWS",
+  //   logo: "https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=200",
+  //   category: "technology",
+  //   website: "#",
+  // },
+  // {
+  //   id: "3",
+  //   name: "GitHub",
+  //   logo: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=200",
+  //   category: "technology",
+  //   website: "#",
+  // },
+  // {
+  //   id: "4",
+  //   name: "Tech Startups Africa",
+  //   logo: "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=200",
+  //   category: "hiring",
+  //   website: "#",
+  // },
   {
     id: "5",
-    name: "BYS",
-    logo: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=200",
+    name: "Beyond Service Year (BSY)",
+    logo: BSY,
     category: "community",
     website: "#",
   },

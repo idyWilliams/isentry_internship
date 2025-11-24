@@ -10,7 +10,7 @@ export const SOCIAL_LINKS = {
   linkedin: 'https://linkedin.com/company/isentry-technologies',
   twitter: 'https://x.com/isentrytech',
   instagram: 'https://instagram.com/isentry.technologies',
-  github: 'https://github.com/isentrytech',
+  facebook: 'https://github.com/isentrytech',
 } as const;
 
 export const CONTACT_INFO = {

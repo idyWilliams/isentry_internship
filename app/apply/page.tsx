@@ -14,7 +14,7 @@ export default function Apply() {
     name: '',
     email: '',
     country: '',
-    github: '',
+    linkedIn: '',
     motivation: '',
   });
   const [submitted, setSubmitted] = useState(false);
@@ -37,13 +37,13 @@ export default function Apply() {
       newErrors.country = 'Country is required';
     }
 
-    if (!formData.github.trim()) {
-      newErrors.github = 'GitHub/Portfolio link is required';
+    if (!formData.linkedIn.trim()) {
+      newErrors.linkedIn = "LinkedIn link is required";
     } else if (
-      !/^https?:\/\/.+/.test(formData.github) &&
-      !/^github\.com\/.+/.test(formData.github)
+      !/^https?:\/\/.+/.test(formData.linkedIn) &&
+      !/^github\.com\/.+/.test(formData.linkedIn)
     ) {
-      newErrors.github = 'Please provide a valid URL';
+      newErrors.linkedIn = "Please provide a valid URL";
     }
 
     if (!formData.motivation.trim()) {
@@ -60,8 +60,10 @@ export default function Apply() {
     e.preventDefault();
 
     if (validateForm()) {
-      const mailtoLink = `mailto:isentryinternship@gmail.com?subject=Internship Application - ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(
-        `Name: ${formData.name}\nEmail: ${formData.email}\nCountry: ${formData.country}\nGitHub/Portfolio: ${formData.github}\n\nMotivation:\n${formData.motivation}`
+      const mailtoLink = `mailto:internship@isentrytechnologies.com?subject=Internship Application - ${encodeURIComponent(
+        formData.name
+      )}&body=${encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\nCountry: ${formData.country}\nLINKEDIN: ${formData.linkedIn}\n\nMotivation:\n${formData.motivation}`
       )}`;
 
       window.location.href = mailtoLink;
@@ -99,17 +101,18 @@ export default function Apply() {
             Application Submitted!
           </h1>
           <p className="mb-8 text-gray-600 dark:text-gray-400">
-            Thank you for your interest in iSentry Internship. We'll review your application and get back to you soon.
+            Thank you for your interest in iSentry Internship. We&apos;ll review
+            your application and get back to you soon.
           </p>
           <Button
             onClick={() => {
               setSubmitted(false);
               setFormData({
-                name: '',
-                email: '',
-                country: '',
-                github: '',
-                motivation: '',
+                name: "",
+                email: "",
+                country: "",
+                linkedIn: "",
+                motivation: "",
               });
             }}
             variant="outline"
@@ -135,7 +138,8 @@ export default function Apply() {
               Apply to iSentry Internship
             </h1>
             <p className="text-lg text-white/90 md:text-xl">
-              Applications for the next cohort are now open! Join Africa's most practical internship experience.
+              Applications for the next cohort are now open! Join Africa&apos;s
+              most practical internship experience.
             </p>
           </motion.div>
         </div>
@@ -163,7 +167,7 @@ export default function Apply() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="John Doe"
-                      className={errors.name ? 'border-red-500' : ''}
+                      className={errors.name ? "border-red-500" : ""}
                     />
                     {errors.name && (
                       <p className="mt-1 text-sm text-red-600">{errors.name}</p>
@@ -179,10 +183,12 @@ export default function Apply() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="john@example.com"
-                      className={errors.email ? 'border-red-500' : ''}
+                      className={errors.email ? "border-red-500" : ""}
                     />
                     {errors.email && (
-                      <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+                      <p className="mt-1 text-sm text-red-600">
+                        {errors.email}
+                      </p>
                     )}
                   </div>
 
@@ -194,7 +200,7 @@ export default function Apply() {
                       value={formData.country}
                       onChange={handleChange}
                       placeholder="Nigeria"
-                      className={errors.country ? 'border-red-500' : ''}
+                      className={errors.country ? "border-red-500" : ""}
                     />
                     {errors.country && (
                       <p className="mt-1 text-sm text-red-600">
@@ -204,18 +210,18 @@ export default function Apply() {
                   </div>
 
                   <div>
-                    <Label htmlFor="github">GitHub / Portfolio Link *</Label>
+                    <Label htmlFor="github">LinkedIn *</Label>
                     <Input
                       id="github"
                       name="github"
-                      value={formData.github}
+                      value={formData.linkedIn}
                       onChange={handleChange}
-                      placeholder="https://github.com/yourusername"
-                      className={errors.github ? 'border-red-500' : ''}
+                      placeholder="https://linkedin.com/yourusername"
+                      className={errors.linkedIn ? "border-red-500" : ""}
                     />
                     {errors.github && (
                       <p className="mt-1 text-sm text-red-600">
-                        {errors.github}
+                        {errors.linkedIn}
                       </p>
                     )}
                   </div>
@@ -231,7 +237,7 @@ export default function Apply() {
                       onChange={handleChange}
                       placeholder="Tell us about your motivation, goals, and what you hope to learn..."
                       rows={6}
-                      className={errors.motivation ? 'border-red-500' : ''}
+                      className={errors.motivation ? "border-red-500" : ""}
                     />
                     <p className="mt-1 text-xs text-gray-500">
                       {formData.motivation.length} characters (minimum 50)

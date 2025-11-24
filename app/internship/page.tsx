@@ -64,11 +64,13 @@ const details = [
 const highlights = [
   'Work on products used by real customers',
   'Weekly mentorship sessions with industry experts',
-  'Learn modern tech stack: React, TypeScript, Node.js, Tailwind',
+  'Learn modern tech stackrelated to your skill area',
   'Practice Agile methodologies and professional workflows',
   'Build your professional network across Africa',
   'Certificate of completion and LinkedIn recommendations',
 ];
+
+const onboardingVideo = "https://www.youtube.com/embed/fxcH2GCjWgc";
 
 export default function Internship() {
   return (
@@ -85,7 +87,8 @@ export default function Internship() {
               The Internship Program
             </h1>
             <p className="text-lg text-white/90 md:text-xl">
-              A comprehensive, hands-on experience designed to transform learners into professional developers.
+              A comprehensive, hands-on experience designed to transform
+              learners into professional developers.
             </p>
           </motion.div>
         </div>
@@ -146,7 +149,8 @@ export default function Internship() {
               How It Works
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-400">
-              Your journey from application to becoming a professional developer.
+              Your journey from application to becoming a professional
+              developer.
             </p>
           </motion.div>
 
@@ -251,12 +255,13 @@ export default function Internship() {
               Watch Our Last Cohort Onboarding
             </h2>
             <p className="mb-8 text-gray-600 dark:text-gray-400">
-              See what it's like to be part of the iSentry Internship family.
+              See what it&apos;s like to be part of the iSentry Internship
+              family.
             </p>
             <div className="aspect-video overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-800">
               <iframe
                 className="h-full w-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                src={onboardingVideo}
                 title="Cohort Onboarding"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -278,7 +283,8 @@ export default function Internship() {
               Ready to Begin?
             </h2>
             <p className="mb-8 text-lg text-white/90">
-              Applications are open for the next cohort. Don't miss this opportunity.
+              Applications are open for the next cohort. Don&apos;t miss this
+              opportunity.
             </p>
             <Link href="/apply">
               <Button
