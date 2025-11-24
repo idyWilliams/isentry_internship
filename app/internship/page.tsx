@@ -70,7 +70,7 @@ const highlights = [
   'Certificate of completion and LinkedIn recommendations',
 ];
 
-const onboardingVideo = "https://www.youtube.com/embed/fxcH2GCjWgc";
+// const onboardingVideo = "https://www.youtube.com/embed/fxcH2GCjWgc";
 
 export default function Internship() {
   return (
@@ -261,7 +261,7 @@ export default function Internship() {
             <div className="aspect-video overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-800">
               <iframe
                 className="h-full w-full"
-                src={onboardingVideo}
+                src="https://www.youtube.com/embed/fxcH2GCjWgc"
                 title="Cohort Onboarding"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
