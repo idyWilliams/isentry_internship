@@ -37,11 +37,10 @@ export default function PartnershipsPage() {
     <div className="flex flex-col bg-white dark:bg-gray-950">
       <section className="bg-gradient-to-r from-[#0D3B66] to-[#006B99] py-16 text-white md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="mb-4 text-4xl font-bold md:text-5xl">
-            Our Partners
-          </h1>
+          <h1 className="mb-4 text-4xl font-bold md:text-5xl">Our Partners</h1>
           <p className="mx-auto max-w-2xl text-lg text-white/90">
-            We're proud to partner with leading organizations that support African tech talent development and internship success.
+            We&apos;re proud to partner with leading organizations that support
+            African tech talent development and internship success.
           </p>
         </div>
       </section>
@@ -53,7 +52,8 @@ export default function PartnershipsPage() {
               iSentry Internship is a Subsidiary of iSentry Technologies
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-400">
-              iSentry Technologies is committed to building Africa's most powerful ecosystem for tech talent development.
+              iSentry Technologies is committed to building Africa&apos;s most
+              powerful ecosystem for tech talent development.
             </p>
           </div>
         </div>
@@ -62,15 +62,15 @@ export default function PartnershipsPage() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 flex flex-wrap gap-3 justify-center">
-            {categories.map(category => (
+            {categories.map((category) => (
               <Button
                 key={category}
-                variant={selectedCategory === category ? 'default' : 'outline'}
+                variant={selectedCategory === category ? "default" : "outline"}
                 onClick={() => setSelectedCategory(category)}
-                className={selectedCategory === category ? 'bg-[#0D3B66]' : ''}
+                className={selectedCategory === category ? "bg-[#0D3B66]" : ""}
               >
-                {category === 'all'
-                  ? 'All Partners'
+                {category === "all"
+                  ? "All Partners"
                   : categoryLabels[category as keyof typeof categoryLabels]}
               </Button>
             ))}
@@ -87,7 +87,7 @@ export default function PartnershipsPage() {
               >
                 <Card className="h-full border border-gray-200 bg-white transition-all hover:shadow-lg dark:border-gray-800 dark:bg-gray-900">
                   <CardContent className="p-6 flex flex-col h-full">
-                    <div className="mb-4 h-24 w-full overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
+                    <div className="mb-4 h-24 w-full overflow-hidden rounded-lg dark:bg-gray-800">
                       <Image
                         src={partner.logo}
                         alt={partner.name}
@@ -98,18 +98,30 @@ export default function PartnershipsPage() {
                     </div>
                     <div className="mb-3">
                       <Badge
-                        className={categoryColors[partner.category as keyof typeof categoryColors]}
+                        className={
+                          categoryColors[
+                            partner.category as keyof typeof categoryColors
+                          ]
+                        }
                         variant="secondary"
                       >
-                        {categoryLabels[partner.category as keyof typeof categoryLabels]}
+                        {
+                          categoryLabels[
+                            partner.category as keyof typeof categoryLabels
+                          ]
+                        }
                       </Badge>
                     </div>
                     <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
                       {partner.name}
                     </h3>
                     <div className="mt-auto">
-                      {partner.website && partner.website !== '#' ? (
-                        <Link href={partner.website} target="_blank" rel="noopener noreferrer">
+                      {partner.website && partner.website !== "#" ? (
+                        <Link
+                          href={partner.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <Button
                             variant="outline"
                             size="sm"
@@ -152,7 +164,8 @@ export default function PartnershipsPage() {
             Interested in Partnership?
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-white/90">
-            We're always looking for organizations that share our mission to empower African tech talent.
+            We&apos;re always looking for organizations that share our mission
+            to empower African tech talent.
           </p>
           <Link href="/contact">
             <Button

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Linkedin, Twitter, Instagram, Github } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Twitter, Instagram, Github, Facebook, X } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -17,25 +17,26 @@ const contactMethods = [
     value: CONTACT_INFO.email,
     link: `mailto:${CONTACT_INFO.email}`,
   },
-  {
-    icon: MapPin,
-    title: 'Location',
-    value: CONTACT_INFO.location,
-  },
+  // {
+  //   icon: MapPin,
+  //   title: 'Location',
+  //   value: CONTACT_INFO.location,
+  // },
 ];
 
 const socialLinks = [
   { icon: Linkedin, name: 'LinkedIn', url: SOCIAL_LINKS.linkedin },
-  { icon: Twitter, name: 'Twitter', url: SOCIAL_LINKS.twitter },
+  { icon: X, name: 'Twitter', url: SOCIAL_LINKS.x },
   { icon: Instagram, name: 'Instagram', url: SOCIAL_LINKS.instagram },
-  { icon: Github, name: 'GitHub', url: SOCIAL_LINKS.github },
+  { icon: Facebook, name: 'Facebook', url: SOCIAL_LINKS.facebook },
 ];
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -65,7 +66,7 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-lg text-white/90 md:text-xl">
-              Have questions about the program? We'd love to hear from you.
+              Have questions about the program? We&apos;d love to hear from you.
             </p>
           </motion.div>
         </div>
@@ -137,7 +138,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="mt-8">
+              {/* <div className="mt-8">
                 <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">
                   Our Location
                 </h3>
@@ -153,7 +154,7 @@ export default function Contact() {
                     title="iSentry Location"
                   ></iframe>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
 
             <motion.div
@@ -188,6 +189,18 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="your@email.com"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <Label htmlFor="email">Subject</Label>
+                      <Input
+                        id="email"
+                        name="subject"
+                        type="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        placeholder="Subject of your email"
                         required
                       />
                     </div>

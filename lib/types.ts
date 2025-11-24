@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface Testimonial {
   id: string;
   name: string;
@@ -17,7 +19,7 @@ export interface Mentor {
   name: string;
   role: string;
   bio: string;
-  image: string;
+  image: StaticImageData;
   linkedin?: string;
 }
 
@@ -63,7 +65,7 @@ export interface Cohort {
 export interface Partner {
   id: string;
   name: string;
-  logo: string;
+  logo: StaticImageData;
   category: 'sponsor' | 'technology' | 'hiring' | 'community';
   website?: string;
 }

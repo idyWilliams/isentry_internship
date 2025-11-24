@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
-import { Testimonial } from '@/lib/types';
-import { Trophy } from 'lucide-react';
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
+import { Testimonial } from "@/lib/types";
+import { Trophy } from "lucide-react";
 
 interface TestimonialCardProps {
   testimonial: Testimonial;
@@ -18,7 +18,7 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
               alt={testimonial.name}
               width={64}
               height={64}
-              className="rounded-full object-cover"
+              className="h-16 w-16 rounded-full object-cover"
             />
             {testimonial.isBestInCohort && (
               <div className="absolute -bottom-1 -right-1 rounded-full bg-yellow-400 p-1 shadow-lg">
@@ -34,7 +34,12 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
               {testimonial.role}
             </p>
             <p className="text-xs text-gray-500 dark:text-gray-500">
-              {testimonial.countryFlag} {testimonial.country}
+              {/* {testimonial.countryFlag} {testimonial.country} */}
+              <span
+                className={`fi fi-${testimonial.countryFlag.toLowerCase()}`}
+                style={{ marginRight: "8px" }}
+                aria-label={`Flag of ${testimonial.country}`}
+              />
             </p>
           </div>
         </div>

@@ -10,7 +10,7 @@ interface MentorCardProps {
 export function MentorCard({ mentor }: MentorCardProps) {
   return (
     <Card className="h-full overflow-hidden transition-shadow hover:shadow-lg">
-      <div className="relative h-64 w-full">
+      <div className="relative h-96 w-full">
         <Image
           src={mentor.image}
           alt={mentor.name}
