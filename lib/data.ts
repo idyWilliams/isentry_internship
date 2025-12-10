@@ -20,7 +20,7 @@ import BSY from "./../public/images/team/BSY.jpg"
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Amina Okafor",
+    name: "Eduoku Emem Okon",
     role: "Frontend Developer Intern",
     country: "Nigeria",
     countryFlag: "ng",
@@ -33,10 +33,10 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "2",
-    name: "Kwame Mensah",
-    role: "Full Stack Developer Intern",
-    country: "Ghana",
-    countryFlag: "gh",
+    name: "Taiwo Saidat Oyewale",
+    role: "Frontend Developer Intern",
+    country: "Nigeria",
+    countryFlag: "ng",
     image:
       "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400",
     text: "Working on live projects taught me more in 3 months than years of solo learning. I now work as a junior developer at a tech startup.",
@@ -45,10 +45,10 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "3",
-    name: "Aisha Kamara",
-    role: "UI/UX Developer Intern",
-    country: "Sierra Leone",
-    countryFlag: "sl",
+    name: "Wangui Njoroge",
+    role: "Frontend Developer Intern",
+    country: "Kenya",
+    countryFlag: "ke",
     image:
       "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400",
     text: "The collaborative environment and real-world challenges pushed me beyond my comfort zone. I gained confidence and skills I never thought possible.",
@@ -57,10 +57,10 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "4",
-    name: "David Omondi",
-    role: "Backend Developer Intern",
-    country: "Kenya",
-    countryFlag: "ke",
+    name: "Victor John Udo",
+    role: "QA Tester Intern",
+    country: "Nigeria",
+    countryFlag: "ng",
     image:
       "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
     text: "iSentry gave me the opportunity to work with modern technologies and best practices. The experience was invaluable for my career growth.",
@@ -70,10 +70,10 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "5",
-    name: "Zainab Hassan",
-    role: "Backend Developer Intern",
-    country: "Somalia",
-    countryFlag: "so",
+    name: "Gideon Sunday",
+    role: "Product Manager",
+    country: "Nigeria",
+    countryFlag: "ng",
     image:
       "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=400",
     text: "The real-world experience here is unmatched. I learned more about system design and scalability than I ever could from online courses.",
@@ -82,8 +82,20 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "6",
-    name: "Emeka Nwabueze",
-    role: "Frontend Developer Intern",
+    name: "Ayiro Oluwadamilola B",
+    role: "Product Manager",
+    country: "Nigeria",
+    countryFlag: "ng",
+    image:
+      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
+    year: "2024",
+    cohort: "2024-Q2",
+  },
+  {
+    id: "7",
+    name: "Ayiro Oluwadamilola B",
+    role: "Product Manager",
     country: "Nigeria",
     countryFlag: "ng",
     image:
