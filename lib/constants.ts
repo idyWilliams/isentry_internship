@@ -8,14 +8,14 @@ export const BRAND_COLORS = {
 
 export const SOCIAL_LINKS = {
   linkedin: 'https://linkedin.com/company/isentry-technologies',
-  twitter: 'https://x.com/isentrytech',
+  x: 'https://x.com/isentrytech',
   instagram: 'https://instagram.com/isentry.technologies',
-  github: 'https://github.com/isentrytech',
+  facebook: 'https://github.com/isentrytech',
 } as const;
 
 export const CONTACT_INFO = {
-  email: 'isentryinternship@gmail.com',
-  location: 'Lagos, Nigeria (Remote Program)',
+  email: "internship@isentrytechnologies.com",
+  location: "Lagos, Nigeria (Remote Program)",
 } as const;
 
-export const LOGO_URL = 'https://isentrytechnologies.com/images/isentry-logo.png';
+export const LOGO_URL = "isentry.svg";
