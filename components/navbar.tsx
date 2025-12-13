@@ -11,12 +11,12 @@ import { Button } from '@/components/ui/button';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/internship', label: 'Internship' },
+  // { href: '/internship', label: 'Internship' },
   { href: '/showcase', label: 'Showcase' },
   { href: '/resources', label: 'Resources' },
-  { href: '/partnerships', label: 'Partners' },
+  // { href: '/partnerships', label: 'Partners' },
   { href: '/blog', label: 'Blog' },
-  { href: '/apply', label: 'Apply' },
+  // { href: '/apply', label: 'Apply' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -48,7 +48,7 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <button
+            {/* <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               className="ml-2 rounded-md p-2 text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
             >
@@ -57,7 +57,7 @@ export function Navbar() {
               ) : (
                 <Moon className="h-5 w-5" />
               )}
-            </button>
+            </button> */}
           </div>
 
           <div className="flex items-center space-x-2 md:hidden">
