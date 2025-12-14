@@ -213,10 +213,10 @@ export const blogPosts: BlogPost[] = [
 ];
 
 export const metrics: Metric[] = [
-  { id: "1", label: "Interns Trained", value: 24, suffix: "+" },
+  { id: "1", label: "Interns Trained", value: 100, suffix: "+" },
   { id: "2", label: "Countries Represented", value: 8, suffix: "" },
-  { id: "3", label: "Real-World Projects", value: 12, suffix: "+" },
-  { id: "4", label: "Placement Rate", value: 92, suffix: "%" },
+  { id: "3", label: "Real-World Projects", value: 5, suffix: "+" },
+  { id: "4", label: "Placement Rate", value: 50, suffix: "%" },
 ];
 
 export const cohorts: Cohort[] = [

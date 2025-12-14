@@ -47,11 +47,15 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="flex flex-col justify-center"
             >
+
               <div className="mb-4 inline-block">
-                <Badge className="bg-[#00A8E8]/10 text-[#0D3B66]">
+                <Badge
+                  onClick={() => window.open('https://www.isentrytechnologies.com', '_blank')}
+                  className="bg-[#00A8E8]/10 text-[#0D3B66] cursor-pointer hover:bg-[#00A8E8]/20 transition-colors">
                   A Subsidiary of iSentry Technologies
                 </Badge>
               </div>
+
               <h1 className="mb-4 text-4xl font-bold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
                 Empowering Africa's Next Generation of Tech Innovators
               </h1>
@@ -152,7 +156,7 @@ export default function Home() {
                 <Card className="h-full border border-gray-200 bg-white transition-all hover:shadow-lg dark:border-gray-800 dark:bg-gray-900">
                   <CardContent className="p-6">
                     <div className="mb-4 inline-flex rounded-lg bg-[#00A8E8]/10 p-3">
-                      <feature.icon className="h-6 w-6 text-[#0D3B66]" />
+                      <feature.icon className="h-6 w-6 text-[#FFFFFF]" />
                     </div>
                     <h3 className="mb-3 text-lg font-bold text-gray-900 dark:text-white">
                       {feature.title}
