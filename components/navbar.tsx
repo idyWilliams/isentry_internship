@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Menu, X, Moon, Sun } from 'lucide-react';
-import { useTheme } from 'next-themes';
-import { LOGO_URL } from '@/lib/constants';
-import { Button } from '@/components/ui/button';
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X, Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { LOGO_URL } from "@/lib/constants";
+import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -48,11 +48,11 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            {/* <button
+            <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               className="ml-2 rounded-md p-2 text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
             >
-              {theme === 'dark' ? (
+              {theme === "dark" ? (
                 <Sun className="h-5 w-5" />
               ) : (
                 <Moon className="h-5 w-5" />
@@ -62,10 +62,10 @@ export function Navbar() {
 
           <div className="flex items-center space-x-2 md:hidden">
             <button
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="rounded-md p-2 text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
             >
-              {theme === 'dark' ? (
+              {theme === "dark" ? (
                 <Sun className="h-5 w-5" />
               ) : (
                 <Moon className="h-5 w-5" />
@@ -75,7 +75,11 @@ export function Navbar() {
               onClick={() => setIsOpen(!isOpen)}
               className="rounded-md p-2 text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>

@@ -53,10 +53,13 @@ export default function Home() {
                 </Badge>
               </div>
               <h1 className="mb-4 text-4xl font-bold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
-                Empowering Africa's Next Generation of Tech Innovators
+                Empowering Africa&apos;s Next Generation of Tech Innovators
               </h1>
               <p className="mb-6 text-lg text-gray-600 md:text-xl">
-                Join iSentry Internship, Africa's most practical tech internship program. Work on real projects that impact millions, gain hands-on experience, and launch your tech career with expert mentorship from industry leaders.
+                Join iSentry Internship, Africa&apos;s most practical tech
+                internship program. Work on real projects that impact millions,
+                gain hands-on experience, and launch your tech career with
+                expert mentorship from industry leaders.
               </p>
               <div className="mb-8 flex flex-col gap-4 sm:flex-row">
                 <Link href="/apply">
@@ -79,7 +82,8 @@ export default function Home() {
                 </Link>
               </div>
               <p className="text-sm text-gray-500">
-                Next cohort applications opening soon. Join 200+ African developers.
+                Next cohort applications opening soon. Join 200+ African
+                developers.
               </p>
             </motion.div>
             <motion.div
@@ -136,7 +140,8 @@ export default function Home() {
               Why Choose iSentry Internship?
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-400">
-              We provide everything you need to transition from learning to building real products in the tech industry.
+              We provide everything you need to transition from learning to
+              building real products in the tech industry.
             </p>
           </motion.div>
 
@@ -181,7 +186,8 @@ export default function Home() {
               Featured Projects
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-400">
-              Real projects built by our interns that have impacted thousands of users across Africa.
+              Real projects built by our interns that have impacted thousands of
+              users across Africa.
             </p>
           </motion.div>
 
@@ -226,7 +232,8 @@ export default function Home() {
               Success Stories From Our Interns
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-400">
-              Meet the exceptional developers who transformed their careers through iSentry Internship.
+              Meet the exceptional developers who transformed their careers
+              through iSentry Internship.
             </p>
           </motion.div>
 
@@ -272,7 +279,9 @@ export default function Home() {
               Ready to Start Your Journey?
             </h2>
             <p className="mb-8 text-lg text-white/90">
-              Join the next cohort of Africa's most talented developers. Work on real projects, get mentored by industry experts, and launch your tech career.
+              Join the next cohort of Africa&apos;s most talented developers.
+              Work on real projects, get mentored by industry experts, and
+              launch your tech career.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row justify-center">
               <Link href="/apply">
