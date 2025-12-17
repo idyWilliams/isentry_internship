@@ -18,4 +18,4 @@ export const CONTACT_INFO = {
   location: "Lagos, Nigeria (Remote Program)",
 } as const;
 
-export const LOGO_URL = "isentry.svg";
+export const LOGO_URL = "isentry_logo.svg";

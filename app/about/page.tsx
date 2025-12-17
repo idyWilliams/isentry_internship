@@ -134,7 +134,7 @@ export default function About() {
               Our Story
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-400">
-              From a vision to reality — building Africa&apos;s tech future
+              From a vision to reality building Africa&apos;s tech future
               together.
             </p>
           </motion.div>
@@ -149,8 +149,8 @@ export default function About() {
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 className="mb-8 flex gap-6 last:mb-0"
               >
-                <div className="flex flex-col items-center">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#00A8E8] text-white font-bold">
+                <div className="flex flex-col items-center flex-shrink-0">
+                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#00A8E8] text-white font-bold text-lg">
                     {item.year.slice(-2)}
                   </div>
                   {index < timeline.length - 1 && (
