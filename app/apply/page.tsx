@@ -1,21 +1,21 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
-import { CheckCircle } from 'lucide-react';
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { CheckCircle } from "lucide-react";
 
 export default function Apply() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    country: '',
-    linkedIn: '',
-    motivation: '',
+    name: "",
+    email: "",
+    country: "",
+    linkedIn: "",
+    motivation: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -24,17 +24,17 @@ export default function Apply() {
     const newErrors: Record<string, string> = {};
 
     if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
+      newErrors.name = "Name is required";
     }
 
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = "Email is required";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Invalid email address';
+      newErrors.email = "Invalid email address";
     }
 
     if (!formData.country.trim()) {
-      newErrors.country = 'Country is required';
+      newErrors.country = "Country is required";
     }
 
     if (!formData.linkedIn.trim()) {
@@ -47,9 +47,9 @@ export default function Apply() {
     }
 
     if (!formData.motivation.trim()) {
-      newErrors.motivation = 'Motivation is required';
+      newErrors.motivation = "Motivation is required";
     } else if (formData.motivation.trim().length < 50) {
-      newErrors.motivation = 'Please provide at least 50 characters';
+      newErrors.motivation = "Please provide at least 50 characters";
     }
 
     setErrors(newErrors);
@@ -210,16 +210,16 @@ export default function Apply() {
                   </div>
 
                   <div>
-                    <Label htmlFor="github">LinkedIn *</Label>
+                    <Label htmlFor="linkedin">LinkedIn *</Label>
                     <Input
-                      id="github"
-                      name="github"
+                      id="linkedin"
+                      name="linkedin"
                       value={formData.linkedIn}
                       onChange={handleChange}
                       placeholder="https://linkedin.com/yourusername"
                       className={errors.linkedIn ? "border-red-500" : ""}
                     />
-                    {errors.github && (
+                    {errors.linkedin && (
                       <p className="mt-1 text-sm text-red-600">
                         {errors.linkedIn}
                       </p>

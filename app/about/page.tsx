@@ -154,7 +154,7 @@ export default function About() {
                     {item.year.slice(-2)}
                   </div>
                   {index < timeline.length - 1 && (
-                    <div className="mt-2 h-full w-0.5 bg-gray-300 dark:bg-gray-700" />
+                    <div className="mt-2 h-2/5 w-0.5 bg-gray-300 dark:bg-gray-700" />
                   )}
                 </div>
                 <div className="flex-1 pb-8">

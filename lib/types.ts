@@ -7,6 +7,7 @@ export interface Testimonial {
   country: string;
   countryFlag: string;
   image: string;
+  linkedin: string;
   text: string;
   year: string;
   cohort: string;

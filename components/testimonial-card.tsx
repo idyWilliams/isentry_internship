@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Testimonial } from "@/lib/types";
-import { Trophy } from "lucide-react";
+import { Trophy, Linkedin } from "lucide-react";
 
 interface TestimonialCardProps {
   testimonial: Testimonial;
@@ -42,6 +42,14 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
               />
             </p>
           </div>
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 transition-colors hover:text-[#00A8E8] dark:text-gray-400 dark:hover:text-[#00A8E8]"
+          >
+            <Linkedin className="h-5 w-5" />
+          </a>
         </div>
         <p className="text-gray-700 dark:text-gray-300">{testimonial.text}</p>
         <p className="mt-4 text-xs text-gray-500 dark:text-gray-500">

@@ -3,6 +3,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Linkedin, Twitter, Instagram, Github, Facebook, X } from 'lucide-react';
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -24,6 +27,33 @@ const contactMethods = [
   // },
 ];
 
+const contactSchema = yup.object({
+  name: yup
+    .string()
+    .trim()
+    .min(2, "Name must be at least 2 characters")
+    .required("Name is required"),
+
+  email: yup
+    .string()
+    .email("Enter a valid email address")
+    .required("Email is required"),
+
+  subject: yup
+    .string()
+    .trim()
+    .min(3, "Subject must be at least 3 characters")
+    .required("Subject is required"),
+
+  message: yup
+    .string()
+    .trim()
+    .min(10, "Message must be at least 10 characters")
+    .required("Message is required"),
+});
+
+type ContactFormValues = yup.InferType<typeof contactSchema>;
+
 const socialLinks = [
   { icon: Linkedin, name: 'LinkedIn', url: SOCIAL_LINKS.linkedin },
   { icon: X, name: 'Twitter', url: SOCIAL_LINKS.x },
@@ -31,26 +61,50 @@ const socialLinks = [
   { icon: Facebook, name: 'Facebook', url: SOCIAL_LINKS.facebook },
 ];
 
+
+  
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm<ContactFormValues>({
+    resolver: yupResolver(contactSchema),
   });
+  /* ------------------ Submit Handler ------------------ */
+  const onSubmit = (data: ContactFormValues) => {
+    const mailtoLink = `mailto:${CONTACT_INFO.email}
+      ?subject=${encodeURIComponent(data.subject)}
+      &body=${encodeURIComponent(
+        `Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`
+      )}`;
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const mailtoLink = `mailto:${CONTACT_INFO.email}?subject=Contact from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(formData.message)}%0D%0A%0D%0AFrom: ${encodeURIComponent(formData.email)}`;
     window.location.href = mailtoLink;
+    reset();
   };
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   subject: "",
+  //   message: "",
+  // });
+
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   const mailtoLink = `mailto:${CONTACT_INFO.email}?subject=Contact from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(formData.message)}%0D%0A%0D%0AFrom: ${encodeURIComponent(formData.email)}`;
+  //   window.location.href = mailtoLink;
+  // };
+
+  // const handleChange = (
+  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  // ) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prev) => ({ ...prev, [name]: value }));
+  // };
 
   return (
     <div className="flex flex-col">
@@ -167,55 +221,44 @@ export default function Contact() {
                   <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">
                     Send Us a Message
                   </h2>
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                     <div>
                       <Label htmlFor="name">Name</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Your name"
-                        required
-                      />
+                      <Input {...register("name")} />
+                      {errors.name && (
+                        <p className="mt-1 text-sm text-red-500">
+                          {errors.name.message}
+                        </p>
+                      )}
                     </div>
 
                     <div>
                       <Label htmlFor="email">Email</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="your@email.com"
-                        required
-                      />
+                      <Input type="email" {...register("email")} />
+                      {errors.email && (
+                        <p className="mt-1 text-sm text-red-500">
+                          {errors.email.message}
+                        </p>
+                      )}
                     </div>
                     <div>
                       <Label htmlFor="email">Subject</Label>
-                      <Input
-                        id="email"
-                        name="subject"
-                        type="subject"
-                        value={formData.subject}
-                        onChange={handleChange}
-                        placeholder="Subject of your email"
-                        required
-                      />
+                      <Input {...register("subject")} />
+                      {errors.subject && (
+                        <p className="mt-1 text-sm text-red-500">
+                          {errors.subject.message}
+                        </p>
+                      )}
                     </div>
 
                     <div>
                       <Label htmlFor="message">Message</Label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        placeholder="Tell us what's on your mind..."
-                        rows={6}
-                        required
-                      />
+                      <Textarea rows={6} {...register("message")} />
+                      {errors.message && (
+                        <p className="mt-1 text-sm text-red-500">
+                          {errors.message.message}
+                        </p>
+                      )}
                     </div>
 
                     <Button
@@ -223,7 +266,7 @@ export default function Contact() {
                       size="lg"
                       className="w-full bg-[#00A8E8] text-white hover:bg-[#00A8E8]/90"
                     >
-                      Send Message
+                      {isSubmitting ? "Sending..." : "Send Message"}
                     </Button>
                   </form>
                 </CardContent>

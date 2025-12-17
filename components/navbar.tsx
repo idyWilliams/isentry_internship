@@ -48,7 +48,7 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <button
+            {/* <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               className="ml-2 rounded-md p-2 text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
             >
