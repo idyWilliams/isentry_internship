@@ -6,7 +6,7 @@ export interface Testimonial {
   role: string;
   country: string;
   countryFlag: string;
-  image: string;
+  image: string | StaticImageData;
   linkedin: string;
   text: string;
   year: string;

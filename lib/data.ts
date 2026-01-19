@@ -16,6 +16,30 @@ import ummi from "./../public/images/team/ummi.jpeg";
 import seun from "./../public/images/team/bamgbade.jpg";
 import steve from "./../public/images/team/Steven.jpeg";
 import BSY from "./../public/images/team/BSY.jpg";
+import Christabel from "./../public/interns images/1757934584213 - Christabel Nzekwe.jpg";
+import Faith from "./../public/interns images/20240920_163231 - Faith Kolade.jpg";
+import Mattia from "./../public/interns images/20250724_103912 - Mattia Lavai.jpg";
+import Adeola from "./../public/interns images/20250906_181856 - Omomowo Adeola.png";
+import Aishat from "./../public/interns images/IMG_4700 - Aishat Yusuf.jpeg";
+import Emmanuel from "./../public/interns images/IMG-20250422-WA0056 - Emmanuel Adeleke.jpg";
+import Tosin from "./../public/interns images/IMG_9952 - Tosin Oyedun.jpeg";
+import Evelyn from "./../public/interns images/IMG_2540 - Evelyn Nyorelagos.jpeg";
+import Sifan from "./../public/interns images/Sifan - Sifan Yemane.jpg";
+import Olawale from "./../public/interns images/20250911_103843 - Olowolayemo Olawale.jpg";
+import Janet from "./../public/interns images/Screenshot_20250905-034700~2 - AFEHOMO JANET.png";
+import Olayele from "./../public/interns images/My Picture New 1 - olaleye ifeoluwa.png";
+import Esther from "./../public/interns images/IMG_20200419_151340_1_1663943858802 - ESTHER FAMAKINWA.jpg";
+import Musa from "./../public/interns images/IMG-20230911-WA0077 - Musa Saidu Auna.jpg";
+import John from "./../public/interns images/JPEG_20250722_172756_7105081795096905677 - Ibhaluobe Eichie.jpg";
+import Waheed from "./../public/interns images/Screenshot_20250430-214002 - waheed sodiq.jpg";
+import Adefemi from "./../public/interns images/FB_IMG_1752996434061 - ADEDAMOLA ADEFEMI.jpg";
+import Samuel from "./../public/interns images/Profile picture - Samuel Adewale.jpg";
+import Emem from "./../public/interns images/Emem-Peace.jpg";
+import Taiwo from "./../public/interns images/Taiwo_Oyewale.jpg";
+import Victor from "./../public/interns images/Victor-udo.jpeg";
+import Gideon from "./../public/interns images/gideon.webp";
+import Ayiro from "./../public/interns images/Ariyo_O.B.png";
+import Adejayan from "./../public/interns images/file_000000003f6061f9b2ab5e9092cce116 - Esther Adejayan (X-star).png"
 
 export const testimonials: Testimonial[] = [
   {
@@ -24,13 +48,11 @@ export const testimonials: Testimonial[] = [
     role: "Frontend Developer Intern",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: Emem,
     linkedin: "",
     text: "iSentry Internship transformed my career. I went from tutorial hell to building real products used by actual users. The mentorship was phenomenal.",
     year: "2024",
     cohort: "2024-Q1",
-    // isBestInCohort: true,
   },
   {
     id: "2",
@@ -38,8 +60,7 @@ export const testimonials: Testimonial[] = [
     role: "Frontend Developer Intern",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: Taiwo,
     linkedin: "",
     text: "Working on live projects taught me more in 3 months than years of solo learning. I now work as a junior developer at a tech startup.",
     year: "2024",
@@ -51,8 +72,7 @@ export const testimonials: Testimonial[] = [
     role: "Frontend Developer Intern",
     country: "Kenya",
     countryFlag: "ke",
-    image:
-      "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: wangui,
     linkedin: "",
     text: "The collaborative environment and real-world challenges pushed me beyond my comfort zone. I gained confidence and skills I never thought possible.",
     year: "2024",
@@ -64,13 +84,11 @@ export const testimonials: Testimonial[] = [
     role: "QA Tester Intern",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: Victor,
     linkedin: "",
     text: "iSentry gave me the opportunity to work with modern technologies and best practices. The experience was invaluable for my career growth.",
     year: "2024",
     cohort: "2024-Q2",
-    isBestInCohort: true,
   },
   {
     id: "5",
@@ -78,8 +96,7 @@ export const testimonials: Testimonial[] = [
     role: "Product Manager",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: Gideon,
     linkedin: "",
     text: "The real-world experience here is unmatched. I learned more about system design and scalability than I ever could from online courses.",
     year: "2024",
@@ -91,8 +108,7 @@ export const testimonials: Testimonial[] = [
     role: "Product Manager",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: Ayiro,
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2024",
@@ -104,9 +120,8 @@ export const testimonials: Testimonial[] = [
     role: "Data Analysis",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Christabel,
+    linkedin: "https://www.linkedin.com/in/christabel-nzekwe-999643176",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -117,9 +132,9 @@ export const testimonials: Testimonial[] = [
     role: "Content Team",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Janet,
+    linkedin:
+      "https://www.linkedin.com/in/janet-afehomo-453a4a1b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -130,9 +145,8 @@ export const testimonials: Testimonial[] = [
     role: "Product Designer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Samuel,
+    linkedin: "http://www.linkedin.com/in/samuel-adewale-04716921b",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -144,8 +158,7 @@ export const testimonials: Testimonial[] = [
     role: "Content Team",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "",
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -158,9 +171,9 @@ export const testimonials: Testimonial[] = [
     role: "Product Manager",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: "",
+    linkedin:
+      "https://www.linkedin.com/in/deborah-ogunjobi-b1396425a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -171,9 +184,8 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: "/interns images/IMG_0095 - Perela Ipiteikumoh.JPG",
+    linkedin: "http://linkedin.com/in/perela-ipiteikumoh",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -184,8 +196,7 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "",
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -197,9 +208,8 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Esther,
+    linkedin: "https://www.linkedin.com/in/famakinwa-esther-35b07512a",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -210,8 +220,7 @@ export const testimonials: Testimonial[] = [
     role: "Content Team",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "",
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -223,9 +232,8 @@ export const testimonials: Testimonial[] = [
     role: "Content Team",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Adejayan,
+    linkedin: "https://www.linkedin.com/in/esther-adejayan-ab9976368",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -237,9 +245,8 @@ export const testimonials: Testimonial[] = [
     role: "Data Analysis",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Aishat,
+    linkedin: "https://www.linkedin.com/in/aishat-yusuf",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -250,9 +257,8 @@ export const testimonials: Testimonial[] = [
     role: "Data Analysis",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: "/interns images/Aminat Bankole  Passport - Aminat Bankole.JPG",
+    linkedin: "http://www.linkedin.com/in/aminat-bankole-0b8071188",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -263,9 +269,9 @@ export const testimonials: Testimonial[] = [
     role: "Content Team",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Adefemi,
+    linkedin:
+      "https://www.linkedin.com/in/damola-adefemi-1396112a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -276,8 +282,7 @@ export const testimonials: Testimonial[] = [
     role: "Data Analysis",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "",
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -289,8 +294,7 @@ export const testimonials: Testimonial[] = [
     role: "Content Team",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "",
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -303,8 +307,7 @@ export const testimonials: Testimonial[] = [
     role: "Frontend Developer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "",
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -317,8 +320,7 @@ export const testimonials: Testimonial[] = [
     role: "Frontend Developer",
     country: "Kenya",
     countryFlag: "ke",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "",
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -330,9 +332,8 @@ export const testimonials: Testimonial[] = [
     role: "Frontend Developer",
     country: "Sierra Leon",
     countryFlag: "sl",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Mattia,
+    linkedin: "https://www.linkedin.com/in/lavaimattia877",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -343,9 +344,8 @@ export const testimonials: Testimonial[] = [
     role: "Frontend Developer",
     country: "Ethiopia",
     countryFlag: "et",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Sifan,
+    linkedin: "https://www.linkedin.com/in/sifan-yemane-b34880384/",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -357,9 +357,9 @@ export const testimonials: Testimonial[] = [
     role: "Frontend Developer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Faith,
+    linkedin:
+      "https://www.linkedin.com/in/kolade-faith-aramide-15ba1637a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -370,8 +370,7 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "",
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -383,9 +382,9 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Olawale,
+    linkedin:
+      "https://www.linkedin.com/in/olowolayemo-olawale-a635a923b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -397,9 +396,8 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Emmanuel,
+    linkedin: "https://www.linkedin.com/in/emmanuel-adeleke-5b933b370",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -412,8 +410,8 @@ export const testimonials: Testimonial[] = [
     country: "Nigeria",
     countryFlag: "ng",
     image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+      "/interns images/tmp_6d65ad58-4ff7-40f9-bcdd-403de5ad481d - SAMUEL DANIA.jpeg",
+    linkedin: "http://linkedin.com/in/samueldania",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -424,8 +422,7 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "",
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -437,9 +434,8 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Olayele,
+    linkedin: "https://www.linkedin.com/in/olaife84/",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -450,9 +446,9 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Waheed,
+    linkedin:
+      "https://www.linkedin.com/in/sodiq-waheed?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -463,9 +459,8 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Evelyn,
+    linkedin: "http://linkedin.com/in/evelyn-nyore-lagos-87483616b",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -476,8 +471,7 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "",
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -489,9 +483,8 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: "",
+    linkedin: "https://www.linkedin.com/in/kingsley-mutana-b92131269",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -502,8 +495,7 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "",
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -515,9 +507,8 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Tosin,
+    linkedin: "http://linkedin.com/in/oluwatosin-oyedun-66867a1b1",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -528,8 +519,7 @@ export const testimonials: Testimonial[] = [
     role: "Product Manager",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "",
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -541,9 +531,8 @@ export const testimonials: Testimonial[] = [
     role: "Frontend Developer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Adeola,
+    linkedin: "https://www.linkedin.com/in/adeola-omomowo",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -555,8 +544,7 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "",
     linkedin: "",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -569,9 +557,8 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: Musa,
+    linkedin: "https://www.linkedin.com/in/saidu-musa-auna-379998186/",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -582,9 +569,9 @@ export const testimonials: Testimonial[] = [
     role: "Front-end Developer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: John,
+    linkedin:
+      "https://www.linkedin.com/in/ibhaluobe-eichie-650564304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -595,9 +582,8 @@ export const testimonials: Testimonial[] = [
     role: "Content Team",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: "/interns images/IMG_1080~2 - Ruth Abuh.JPG",
+    linkedin: "https://www.linkedin.com/in/ruth-abuh-4b935935b?",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -608,9 +594,9 @@ export const testimonials: Testimonial[] = [
     role: "Content Team",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=400",
-    linkedin: "",
+    image: "",
+    linkedin:
+      "https://www.linkedin.com/in/divine-nwokolobia-889717375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -776,32 +762,32 @@ export const projects: InternProject[] = [
     technologies: ["Next.js", "TypeScript", "Supabase", "Chart.js"],
     cohort: "2024-Q1",
     internCount: 3,
-    link: "#",
+    link: "https://goldies-frontend-v3.vercel.app/",
   },
-  {
-    id: "3",
-    title: "Mobile Learning Platform",
-    description:
-      "An innovative platform making tech education accessible to students across Africa via mobile.",
-    image:
-      "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["React Native", "Firebase", "Node.js"],
-    cohort: "2024-Q2",
-    internCount: 3,
-    link: "#",
-  },
-  {
-    id: "4",
-    title: "Community Forum & Marketplace",
-    description:
-      "Thriving digital community platform enabling tech professionals to connect and collaborate.",
-    image:
-      "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Vue.js", "Python", "MongoDB", "Redis"],
-    cohort: "2024-Q2",
-    internCount: 2,
-    link: "#",
-  },
+  // {
+  //   id: "3",
+  //   title: "Mobile Learning Platform",
+  //   description:
+  //     "An innovative platform making tech education accessible to students across Africa via mobile.",
+  //   image:
+  //     "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=800",
+  //   technologies: ["React Native", "Firebase", "Node.js"],
+  //   cohort: "2024-Q2",
+  //   internCount: 3,
+  //   link: "#",
+  // },
+  // {
+  //   id: "4",
+  //   title: "Community Forum & Marketplace",
+  //   description:
+  //     "Thriving digital community platform enabling tech professionals to connect and collaborate.",
+  //   image:
+  //     "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800",
+  //   technologies: ["Vue.js", "Python", "MongoDB", "Redis"],
+  //   cohort: "2024-Q2",
+  //   internCount: 2,
+  //   link: "#",
+  // },
 ];
 
 export const partners: Partner[] = [
