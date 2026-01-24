@@ -1,49 +1,110 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Target, Heart, TrendingUp } from "lucide-react";
+// import { Target, Heart, TrendingUp } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { MentorCard } from "@/components/mentor-card";
 import { mentors } from "@/lib/data";
 // import { Image } from "next-image";
 
-const timeline = [
-  {
-    year: "2023",
-    event: "Program founded",
-    description: "iSentry Internship launches to empower African tech talent",
-  },
-  {
-    year: "2024",
-    event: "Expanded across Africa",
-    description:
-      "Reached developers in 4 countries with multiple successful cohorts",
-  },
-  {
-    year: "2025",
-    event: "New cohort launch",
-    description: "Opening applications for our most ambitious cohort yet",
-  },
-];
+import { Target, Heart, TrendingUp } from "lucide-react";
 
-const values = [
+// Helper to get dynamic current year content
+const currentYear = new Date().getFullYear();
+
+// --- DYNAMIC TIMELINE DATA ---
+export const getTimeline = () => {
+  const baseTimeline = [
+    {
+      year: "2023",
+      event: "Foundations",
+      description: "iSentry Internship launched in Lagos, Nigeria. We started with a small, dedicated group of developers focused on bridging the gap between theory and practice.",
+    },
+    {
+      year: "2024",
+      event: "Pan-African Expansion",
+      description: "We scaled our impact beyond Nigeria, reaching developers in 4 African nations and successfully graduating multiple cohorts into the workforce.",
+    },
+    {
+      year: "2025",
+      event: "Curriculum Evolution",
+      description: "We introduced specialized tracks for Cloud/DevOps and AI, partnering with tech firms to create direct hiring pipelines for our top graduates.",
+    },
+  ];
+
+  // Dynamic entry for the Current Year (2026)
+  if (currentYear >= 2026) {
+    baseTimeline.push({
+      year: "2026",
+      event: "The Next Frontier",
+      description: "This year, we are launching our most ambitious cohort yet in Q2. We are doubling down on remote-first workflows and advanced system design architecture.",
+    });
+  }
+
+  return baseTimeline;
+};
+
+// --- VALUES DATA (Static) ---
+export const values = [
   {
     icon: Target,
-    title: "Our Mission",
-    description: `To bridge the gap between learning and doing in Africa's tech ecosystem by providing hands-on experience on real-world projects.`,
-  },
-  {
-    icon: Heart,
-    title: "Our Values",
-    description:
-      "Excellence, mentorship, collaboration, and a commitment to elevating African talent on the global stage.",
+    title: "Mission",
+    headline: "Bridging the Gap",
+    description: "We exist to turn 'learners' into 'builders.' We provide the missing link in African tech education: high-intensity, hands-on experience with production-grade software.",
   },
   {
     icon: TrendingUp,
-    title: "Our Vision",
-    description: `To become Africa's leading tech internship program, creating a pipeline of world-class developers across the continent.`,
+    title: "Vision",
+    headline: "World-Class Talent",
+    description: "To become the definitive pipeline for African engineering talent. We envision a future where 'Trained by iSentry' is a globally recognized badge of technical excellence.",
+  },
+  {
+    icon: Heart,
+    title: "Core Values",
+    headline: "Excellence & Empathy",
+    description: "We believe in rigorous standards delivered with deep mentorship. We prioritize collaboration over competition and are committed to lifting others as we climb.",
   },
 ];
+
+const timeline = getTimeline();
+// export const timeline = [
+//   {
+//     year: "2023",
+//     title: "The Inception",
+//     description: "iSentry Internship was founded in Benin City with a single goal: to bridge the gap between academic theory and industry reality for Nigerian developers.",
+//   },
+//   {
+//     year: "2024",
+//     title: "Pan-African Expansion",
+//     description: "We scaled our impact, reaching developers across 4 African nations. We successfully graduated multiple cohorts, placing alumni in top startups and remote roles.",
+//   },
+//   {
+//     year: "2025",
+//     title: "The Next Evolution",
+//     description: "We launched our specialized tracks (Cloud, AI & Blockchain) and partnered with international firms to provide direct hiring pipelines for our top 1% talent.",
+//   },
+// ];
+
+// export const values = [
+//   {
+//     icon: Target,
+//     title: "Mission",
+//     headline: "Bridging the Gap",
+//     description: "We exist to turn 'learners' into 'builders.' We provide the missing link in African tech education: high-intensity, hands-on experience with production-grade software.",
+//   },
+//   {
+//     icon: TrendingUp, // Swapped Heart for TrendingUp to match 'Vision' better
+//     title: "Vision",
+//     headline: "World-Class Talent",
+//     description: "To become the definitive pipeline for African engineering talent. We envision a future where 'Trained by iSentry' is a globally recognized badge of technical excellence.",
+//   },
+//   {
+//     icon: Heart, // Used Heart for Values
+//     title: "Core Values",
+//     headline: "Excellence & Empathy",
+//     description: "We believe in rigorous standards delivered with deep mentorship. We prioritize collaboration over competition and are committed to lifting others as we climb.",
+//   },
+// ];
 
 export default function About() {
   return (

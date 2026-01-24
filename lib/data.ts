@@ -10,11 +10,11 @@ import {
 } from "./types";
 import williams from "./../public/images/team/Williams.jpg";
 import timi from "./../public/images/team/Photo - Timilehin Abegunde.png";
-import akanimo from "./../public/images/team/Akanimo.webp";
+import akanimo from "./../public/images/team/ak.png";
 import wangui from "./../public/images/team/Wangui.jpg";
-import ummi from "./../public/images/team/ummi.jpeg";
+
 import seun from "./../public/images/team/bamgbade.jpg";
-import steve from "./../public/images/team/Steven.jpeg";
+
 import BSY from "./../public/images/team/BSY.jpg";
 import Christabel from "./../public/interns images/1757934584213 - Christabel Nzekwe.jpg";
 import Faith from "./../public/interns images/20240920_163231 - Faith Kolade.jpg";
@@ -607,67 +607,45 @@ export const mentors: Mentor[] = [
   {
     id: "1",
     name: "Idorenyin Williams",
-    role: "Backend Mentor",
-    bio: "Frontend engineering expert and visionary leader passionate about empowering African tech talent. With over 8 years of experience building scalable web applications, Idorenyin founded iSentry Internship to bridge the gap between learning and professional practice.",
+    role: "Founder & Lead Mentor",
+    bio: "Idorenyin founded iSentry Technologies to bridge the gap between academic learning and industry demands. He specializes in Frontend Engineering (React/TypeScript) and is passionate about building Africa's digital future.",
     image: williams,
-    linkedin: "https://linkedin.com/in/idorenyin-williams",
+    linkedin: "https://www.linkedin.com/in/idorenyin-williams",
+  },
+   {
+    id: "3",
+    name: "Akanimo Ekong",
+    role: "Mobile Engineer & Socials/Creative Lead",
+    bio: "A Mobile Engineer and Creative Director who drives iSentry's community engagement. Akanimo combines technical knowledge with creative strategy to manage the brand's digital presence, having successfully boosted engagement by over 300%.",
+    image: akanimo,
+    linkedin: "https://www.linkedin.com/in/akanimoekong",
   },
   {
     id: "2",
     name: "Timilehin Abegunde",
     role: "Frontend Mentor",
-    bio: "Frontend Engineer with experience building and scaling SaaS platforms, Ecommerce solutions, and Web3 applications. Skilled in UI/UX focused interfaces with modern frameworks (React, Next.js).",
+    bio: "Frontend Engineer specializing in building scalable SaaS and Web3 applications. Timilehin brings deep expertise in the React ecosystem (Next.js, TypeScript) and helps interns master the art of converting complex designs into pixel-perfect, performant code.",
     image: timi,
-    linkedin: "https://linkedin.com/in/chioma-adewale",
-  },
-  {
-    id: "3",
-    name: "Akanimo Ekong",
-    role: "Socials and Graphics Design",
-    bio: "Social Media Lead who boosted engagement 300% and generated 150+ monthly leads! Love building communities and driving results together.",
-    image: akanimo,
-    linkedin: "https://linkedin.com/in/emmanuel-nduka",
-  },
-  {
-    id: "4",
-    name: "Wangui Njoroge",
-    role: "Product Design",
-    bio: "Frontend Developer with a background in Product Design. I focus on writing clean, efficient code with exceptional UX/UI using React and Next.js with the user in mind. I specialize in building robust solutions, translating complex design visions into high-performance, scalable web applications that drive business results.",
-    image: wangui,
-    linkedin: "https://ke.linkedin.com/in/wangui-njoroge-639378181",
+    linkedin: "https://www.linkedin.com/in/timilehin-abegunde",
   },
   {
     id: "5",
-    name: "Steven Oluwaseyi",
-    role: "QA Testing",
-    bio: "Technically sound and experienced software testing professional with an understanding of SDLC and STLC  principles and methodologies. Hands-on experience testing and delivering quality in E-Commerce, FinTech,  Games, Security, Sports, Leisure & Hospitality, Health-Tech, and Entertainment applications.",
-    image: steve,
-    linkedin: "https://linkedin.com/in/emmanuel-nduka",
-  },
-  {
-    id: "7",
-    name: "Ummi M Kallay",
-    role: "Product Manager",
-    bio: "Product Manager with experience working on SaaS platforms, mobile apps and marketplace solutions. I have contributed to products ranging from financial reconciliation tools, event service marketplaces and fashion engagement apps. My focus is on creating simple, user-centered solutions that solve real problems and drive adoption.",
-    image: ummi,
-    linkedin: "https://linkedin.com/in/emmanuel-nduka",
-  },
-  {
-    id: "8",
-    name: "Fortune",
-    role: "Community Manager",
-    bio: "Backend specialist with expertise in API design, database optimization, and cloud deployment. Dedicated to teaching best practices in software architecture.",
-    image: wangui,
-    linkedin: "https://linkedin.com/in/emmanuel-nduka",
-  },
-  {
-    id: "9",
     name: "Oluwaseun Bamgbade",
     role: "Program Coordinator",
-    bio: "As Program Coordinator for the internship program, I oversee planning and daily operations, working closely with mentors to ensure interns gain meaningful learning experiences. I coordinate communication, track progress, organize resources, and address challenges so that the program runs smoothly and achieves its goals.",
+    bio: "The operational backbone of the internship. Oluwaseun oversees the daily running of the program, ensuring that mentors and interns remain aligned. He manages schedules, resource allocation, and progress tracking to guarantee a smooth learning experience for every cohort.",
     image: seun,
-    linkedin: "https://linkedin.com/in/emmanuel-nduka",
+    linkedin: "https://www.linkedin.com/in/oluwaseun-bamgbade-45657b19a",
   },
+
+  {
+    id: "4",
+    name: "Wangui Njoroge",
+    role: "Product Design & Frontend",
+    bio: "The bridge between design and code. Wangui specializes in UI/UX-focused engineering, ensuring that applications are not just functional but intuitive. She mentors interns on design systems, accessibility, and the 'developer-designer' handoff workflow.",
+    image: wangui,
+    linkedin: "https://www.linkedin.com/in/wangui-njoroge-639378181",
+  },
+
 ];
 
 export const blogPosts: BlogPost[] = [
@@ -710,7 +688,7 @@ export const blogPosts: BlogPost[] = [
 ];
 
 export const metrics: Metric[] = [
-  { id: "1", label: "Interns Trained", value: 100, suffix: "+" },
+  { id: "1", label: "Interns Trained", value: 50, suffix: "+" },
   { id: "2", label: "Countries Represented", value: 5, suffix: "" },
   { id: "3", label: "Real-World Projects", value: 5, suffix: "+" },
   { id: "4", label: "Placement Rate", value: 50, suffix: "%" },

@@ -48,6 +48,19 @@ export default function Home() {
               className="flex flex-col justify-center"
             >
 
+              <div className="mb-6 inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-sm text-blue-900 dark:border-blue-800 dark:bg-blue-900/30 dark:text-blue-100">
+                <span className="mr-2 flex h-2 w-2 items-center justify-center rounded-full bg-blue-600">
+                  <span className="h-2 w-2 animate-ping rounded-full bg-blue-600 opacity-75"></span>
+                </span>
+                <span className="font-medium">New Cohort Starting March 2026!</span>
+                <Link
+                  href="/apply"
+                  className="ml-2 font-semibold text-blue-700 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                >
+                  Apply Now <span aria-hidden="true">&rarr;</span>
+                </Link>
+              </div>
+
               <div className="mb-4 inline-block">
                 <Badge
                   onClick={() => window.open('https://www.isentrytechnologies.com', '_blank')}
