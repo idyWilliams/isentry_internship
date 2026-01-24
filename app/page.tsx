@@ -233,11 +233,11 @@ export default function Home() {
             className="mb-12 text-center"
           >
             <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">
-              Success Stories From Our Interns
+              Success Stories From Our Mentees
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-400">
               Meet the exceptional developers who transformed their careers
-              through iSentry Internship.
+              through iSentry Mentorship Program.
             </p>
           </motion.div>
 

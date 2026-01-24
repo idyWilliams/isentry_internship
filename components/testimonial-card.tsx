@@ -11,37 +11,40 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
   return (
     <Card className="relative h-full transition-shadow hover:shadow-lg">
       <CardContent className="p-6">
-        <div className="mb-4 flex flex-col gap-2 space-x-4">
-          <div className="relative flex justify-center">
+        <div className="mb-4 flex flex-col gap-2 ">
+          <figure className=" border border-gray-200 shadow-md w-fit rounded-full">
             <Image
               src={testimonial.image}
               alt={testimonial.name}
               width={164}
               height={164}
-              className="h-20 w-20 rounded-full object-cover"
+              className="h-28 w-28 rounded-full object-cover "
             />
             {testimonial.isBestInCohort && (
               <div className="absolute -bottom-1 right-32 rounded-full bg-yellow-400 p-1 shadow-lg">
                 <Trophy className="h-4 w-4 text-yellow-900" />
               </div>
             )}
-          </div>
-          <div className="flex justify-between">
-            <div className="flex-1">
-              <h3 className="font-semibold text-gray-900 dark:text-white">
+          </figure>
+          <div className="">
+            <div className="">
+              <div className="flex items-center  gap-2">
+              <h3 className="font-bold text-gray-900 dark:text-white text-xl">
                 {testimonial.name}
               </h3>
+                <p className="text-xs text-gray-500 dark:text-gray-500">
+                  {/* {testimonial.countryFlag} {testimonial.country} */}
+                  <span
+                    className={`fi fi-${testimonial.countryFlag.toLowerCase()}`}
+                    style={{ marginRight: "8px" }}
+                    aria-label={`Flag of ${testimonial.country}`}
+                  />
+                </p>
+              </div>
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 {testimonial.role}
               </p>
-              <p className="text-xs text-gray-500 dark:text-gray-500">
-                {/* {testimonial.countryFlag} {testimonial.country} */}
-                <span
-                  className={`fi fi-${testimonial.countryFlag.toLowerCase()}`}
-                  style={{ marginRight: "8px" }}
-                  aria-label={`Flag of ${testimonial.country}`}
-                />
-              </p>
+
             </div>
             <a
               href="http://"
