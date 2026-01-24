@@ -828,63 +828,221 @@ export const partners: Partner[] = [
   },
 ];
 
+// export const resources: Resource[] = [
+//   {
+//     id: "1",
+//     title: "React Documentation",
+//     description:
+//       "Official React documentation and guides for building modern web applications.",
+//     category: "documentation",
+//     link: "https://react.dev",
+//   },
+//   {
+//     id: "2",
+//     title: "Node.js Best Practices",
+//     description:
+//       "Comprehensive guide to writing scalable backend applications with Node.js.",
+//     category: "learning",
+//     link: "https://nodejs.org/en/learn/getting-started/security-best-practices",
+//   },
+//   {
+//     id: "3",
+//     title: "System Design Fundamentals",
+//     description: "Learn the principles of designing large-scale systems.",
+//     category: "learning",
+//     link: "https://www.systemdesignhandbook.com/guides/system-design-fundamentals/",
+//   },
+//   {
+//     id: "4",
+//     title: "Prompt Engineering Guide",
+//     description: "Essential patterns for designing efficient database schemas.",
+//     category: "documentation",
+//     link: "https://cloud.google.com/discover/what-is-prompt-engineering",
+//   },
+//   {
+//     id: "5",
+//     title: "Git & GitHub for Beginners",
+//     description:
+//       "Master Git workflows and best practices for team collaboration.",
+//     category: "tools",
+//     link: "https://www.freecodecamp.org/news/learn-how-to-use-git-and-github-a-beginner-friendly-handbook/",
+//   },
+//   {
+//     id: "6",
+//     title: "Developer Community Discord",
+//     description: "Join our thriving Discord community of African developers.",
+//     category: "community",
+//     link: "#",
+//   },
+//   {
+//     id: "7",
+//     title: "Developer Community Discord",
+//     description: "Join our thriving Discord community of African developers.",
+//     category: "community",
+//     link: "#",
+//   },
+//   {
+//     id: "8",
+//     title: "Developer Community Discord",
+//     description: "Join our thriving Discord community of African developers.",
+//     category: "community",
+//     link: "#",
+//   },
+// ];
+
+
+
+// import { Resource } from "@/lib/types";
+
 export const resources: Resource[] = [
+  // --- CORE FRAMEWORKS & LANGUAGES ---
   {
     id: "1",
     title: "React Documentation",
-    description:
-      "Official React documentation and guides for building modern web applications.",
+    description: "The official bible for React. Essential for mastering components, hooks, and state management.",
     category: "documentation",
     link: "https://react.dev",
   },
   {
+    id: "nextjs-learn",
+    title: "Next.js: The Official Course",
+    description: "Master App Router, Server Actions, and full-stack development. The backbone of modern web apps.",
+    category: "learning",
+    link: "https://nextjs.org/learn",
+  },
+  {
+    id: "typescript-docs",
+    title: "TypeScript Handbook",
+    description: "Essential for modern development. Learn how to write type-safe code to prevent bugs before they happen.",
+    category: "documentation",
+    link: "https://www.typescriptlang.org/docs/",
+  },
+  {
+    id: "mdn-web",
+    title: "MDN Web Docs",
+    description: "The encyclopaedia of web development. The most trusted resource for HTML, CSS, and JavaScript references.",
+    category: "documentation",
+    link: "https://developer.mozilla.org/en-US/",
+  },
+
+  // --- BACKEND & DATABASES ---
+  {
     id: "2",
     title: "Node.js Best Practices",
-    description:
-      "Comprehensive guide to writing scalable backend applications with Node.js.",
+    description: "A comprehensive guide to writing scalable, secure, and production-ready backend applications.",
     category: "learning",
-    link: "https://nodejs.org/en/learn/getting-started/security-best-practices",
+    link: "https://github.com/goldbergyoni/nodebestpractices",
+  },
+  {
+    id: "fastapi-docs",
+    title: "FastAPI Documentation",
+    description: "The go-to resource for our Python backend track. Build high-performance APIs with automatic docs.",
+    category: "documentation",
+    link: "https://fastapi.tiangolo.com/",
+  },
+  {
+    id: "mongodb-uni",
+    title: "MongoDB University",
+    description: "Free courses to master NoSQL databases. Crucial for the 'M' in our MERN stack projects.",
+    category: "learning",
+    link: "https://learn.mongodb.com/",
+  },
+  {
+    id: "prisma-orm",
+    title: "Prisma ORM",
+    description: "Next-generation Node.js and TypeScript ORM. Makes working with databases intuitive and type-safe.",
+    category: "tools",
+    link: "https://www.prisma.io/docs",
+  },
+
+  // --- DEVOPS & INFRASTRUCTURE ---
+  {
+    id: "docker-guide",
+    title: "Docker for Beginners",
+    description: "Understand containerization. Package your applications to run consistently across any environment.",
+    category: "learning",
+    link: "https://docker-curriculum.com/",
+  },
+  {
+    id: "aws-skillbuilder",
+    title: "AWS Cloud Essentials",
+    description: "Official training for Amazon Web Services. Learn how to deploy, scale, and manage cloud infrastructure.",
+    category: "learning",
+    link: "https://explore.skillbuilder.aws/",
+  },
+
+  // --- TOOLS & WORKFLOW ---
+  {
+    id: "5",
+    title: "Git & GitHub Workflow",
+    description: "Master branching strategies, Pull Requests, and code reviews. This is how we collaborate as a team.",
+    category: "tools",
+    link: "https://docs.github.com/en/get-started/using-git/about-git",
+  },
+  {
+    id: "postman-platform",
+    title: "Postman API Platform",
+    description: "The standard tool for testing APIs. Debug your endpoints before connecting them to the frontend.",
+    category: "tools",
+    link: "https://www.postman.com/",
+  },
+  {
+    id: "figma-dev",
+    title: "Figma for Developers",
+    description: "Bridge the gap between design and code. Inspect files, export assets, and implement pixel-perfect UIs.",
+    category: "tools",
+    link: "https://www.figma.com/dev-mode/",
+  },
+  {
+    id: "vscode-tricks",
+    title: "VS Code Power User",
+    description: "Master the editor. Shortcuts, extensions, and debugging tricks to double your coding speed.",
+    category: "tools",
+    link: "https://code.visualstudio.com/docs/getstarted/tips-and-tricks",
+  },
+
+  // --- CAREER & SOFT SKILLS ---
+  {
+    id: "neetcode",
+    title: "NeetCode.io",
+    description: "The best resource for practicing Data Structures & Algorithms (DSA) for technical interviews.",
+    category: "learning",
+    link: "https://neetcode.io/",
+  },
+  {
+    id: "roadmap-sh",
+    title: "Developer Roadmaps",
+    description: "Visual roadmaps showing the skills you need to learn for Frontend, Backend, and DevOps roles.",
+    category: "learning",
+    link: "https://roadmap.sh/",
   },
   {
     id: "3",
     title: "System Design Fundamentals",
-    description: "Learn the principles of designing large-scale systems.",
+    description: "Learn the principles of designing large-scale systems. Key for moving from Junior to Senior engineering.",
     category: "learning",
-    link: "https://www.systemdesignhandbook.com/guides/system-design-fundamentals/",
+    link: "https://www.systemdesignhandbook.com/",
+  },
+
+  // --- COMMUNITY ---
+  {
+    id: "frontend-mentor",
+    title: "Frontend Mentor",
+    description: "Sharpen your CSS/JS skills by building real-world projects with professional designs.",
+    category: "community",
+    link: "https://www.frontendmentor.io/",
   },
   {
-    id: "4",
-    title: "Prompt Engineering Guide",
-    description: "Essential patterns for designing efficient database schemas.",
-    category: "documentation",
-    link: "https://cloud.google.com/discover/what-is-prompt-engineering",
-  },
-  {
-    id: "5",
-    title: "Git & GitHub for Beginners",
-    description:
-      "Master Git workflows and best practices for team collaboration.",
-    category: "tools",
-    link: "https://www.freecodecamp.org/news/learn-how-to-use-git-and-github-a-beginner-friendly-handbook/",
+    id: "dev-to",
+    title: "DEV Community",
+    description: "A constructive and inclusive social network for software developers. Great for reading and writing articles.",
+    category: "community",
+    link: "https://dev.to/",
   },
   {
     id: "6",
-    title: "Developer Community Discord",
-    description: "Join our thriving Discord community of African developers.",
-    category: "community",
-    link: "#",
-  },
-  {
-    id: "7",
-    title: "Developer Community Discord",
-    description: "Join our thriving Discord community of African developers.",
-    category: "community",
-    link: "#",
-  },
-  {
-    id: "8",
-    title: "Developer Community Discord",
-    description: "Join our thriving Discord community of African developers.",
+    title: "iSentry Community Discord",
+    description: "Connect with fellow interns, mentors, and alumni. Share wins, debug code, and network.",
     category: "community",
     link: "#",
   },

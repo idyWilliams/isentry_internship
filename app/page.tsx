@@ -241,7 +241,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {testimonials.slice(0, 6).map((testimonial, index) => (
               <motion.div
                 key={testimonial.id}
