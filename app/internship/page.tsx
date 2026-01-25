@@ -46,20 +46,21 @@ const steps = [
 const details = [
   {
     icon: Clock,
-    title: 'Duration',
-    description: '3–6 months (flexible based on project needs)',
+    title: 'Program Timeline',
+    description: 'A 3 to 6-month immersive cycle. The timeline is rigorous but adaptable, ensuring you have enough time to ship a production-ready product.',
   },
   {
     icon: Target,
-    title: 'Structure',
-    description: 'Teams of 3-5 interns working on live projects with weekly sprints and evaluations',
+    title: 'Agile Methodology',
+    description: 'Work in cross-functional squads of 3–5. You will simulate a real startup environment with daily standups, weekly sprints, and code reviews.',
   },
   {
     icon: Zap,
-    title: 'Requirements',
-    description: 'Basic React knowledge, eagerness to learn, and commitment to excellence',
+    title: 'Prerequisites',
+    description: 'Solid fundamentals in your chosen track (Code or Design) and the grit to solve complex problems. We value potential and hunger over perfection.',
   },
 ];
+
 
 const highlights = [
   'Work on products used by real customers',

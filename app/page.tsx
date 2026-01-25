@@ -92,7 +92,7 @@ export default function Home() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-[#0D3B66] text-[#FFFFFF] hover:bg-[#0D3B66]/5 hover:text-[#0D3B66]"
+                    className="border-[#0D3B66]  hover:bg-[#0D3B66]/5 text-[#0D3B66]"
                   >
                     Learn More
                   </Button>

@@ -23,12 +23,12 @@ export const getTimeline = () => {
     {
       year: "2024",
       event: "Pan-African Expansion",
-      description: "We scaled our impact beyond Nigeria, reaching developers in 4 African nations and successfully graduating multiple cohorts into the workforce.",
+      description: "We scaled our impact beyond Nigeria, reaching developers in other African countries and successfully graduating the cohorts into the workforce.",
     },
     {
       year: "2025",
       event: "Curriculum Evolution",
-      description: "We introduced specialized tracks for Cloud/DevOps and AI, partnering with tech firms to create direct hiring pipelines for our top graduates.",
+      description: "We introduced specialized tracks for Data Analytics, QA and Social Media Marketing, and also facilitated partnership.",
     },
   ];
 

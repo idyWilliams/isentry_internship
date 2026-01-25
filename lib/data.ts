@@ -12,9 +12,9 @@ import williams from "./../public/images/team/Williams.jpg";
 import timi from "./../public/images/team/Photo - Timilehin Abegunde.png";
 import akanimo from "./../public/images/team/ak.png";
 import wangui from "./../public/images/team/Wangui.jpg";
-
+import chioma from "./../public/interns images/chioma-favour-paul-chike-.jpeg"
 import seun from "./../public/images/team/bamgbade.jpg";
-
+import Aminat from "./../public/interns images/aminat-bankole.jpeg";
 import BSY from "./../public/images/team/BSY.jpg";
 import Christabel from "./../public/interns images/1757934584213 - Christabel Nzekwe.jpg";
 import Faith from "./../public/interns images/20240920_163231 - Faith Kolade.jpg";
@@ -34,6 +34,7 @@ import John from "./../public/interns images/JPEG_20250722_172756_71050817950969
 import Waheed from "./../public/interns images/Screenshot_20250430-214002 - waheed sodiq.jpg";
 import Adefemi from "./../public/interns images/FB_IMG_1752996434061 - ADEDAMOLA ADEFEMI.jpg";
 import Samuel from "./../public/interns images/Profile picture - Samuel Adewale.jpg";
+import SAMUEL from "./../public/interns images/tmp_6d65ad58-4ff7-40f9-bcdd-403de5ad481d - SAMUEL DANIA.jpeg"
 import Emem from "./../public/interns images/Emem-Peace.jpg";
 import Taiwo from "./../public/interns images/Taiwo_Oyewale.jpg";
 import Victor from "./../public/interns images/Victor-udo.jpeg";
@@ -49,7 +50,7 @@ export const testimonials: Testimonial[] = [
     country: "Nigeria",
     countryFlag: "ng",
     image: Emem,
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/emem-eduoku/",
     text: "iSentry Internship transformed my career. I went from tutorial hell to building real products used by actual users. The mentorship was phenomenal.",
     year: "2024",
     cohort: "2024-Q1",
@@ -61,7 +62,7 @@ export const testimonials: Testimonial[] = [
     country: "Nigeria",
     countryFlag: "ng",
     image: Taiwo,
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/taiwo-oyewale199/",
     text: "Working on live projects taught me more in 3 months than years of solo learning. I now work as a junior developer at a tech startup.",
     year: "2024",
     cohort: "2024-Q1",
@@ -73,7 +74,7 @@ export const testimonials: Testimonial[] = [
     country: "Kenya",
     countryFlag: "ke",
     image: wangui,
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/wangui-njoroge-639378181/",
     text: "The collaborative environment and real-world challenges pushed me beyond my comfort zone. I gained confidence and skills I never thought possible.",
     year: "2024",
     cohort: "2024-Q2",
@@ -81,11 +82,11 @@ export const testimonials: Testimonial[] = [
   {
     id: "4",
     name: "Victor John Udo",
-    role: "QA Tester Intern",
+    role: "QA Engineering Intern",
     country: "Nigeria",
     countryFlag: "ng",
     image: Victor,
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/victorudo/",
     text: "iSentry gave me the opportunity to work with modern technologies and best practices. The experience was invaluable for my career growth.",
     year: "2024",
     cohort: "2024-Q2",
@@ -97,7 +98,7 @@ export const testimonials: Testimonial[] = [
     country: "Nigeria",
     countryFlag: "ng",
     image: Gideon,
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/gideon-sunday/",
     text: "The real-world experience here is unmatched. I learned more about system design and scalability than I ever could from online courses.",
     year: "2024",
     cohort: "2024-Q1",
@@ -109,7 +110,7 @@ export const testimonials: Testimonial[] = [
     country: "Nigeria",
     countryFlag: "ng",
     image: Ayiro,
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/ariyo-oluwadamilola/",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2024",
     cohort: "2024-Q2",
@@ -129,12 +130,12 @@ export const testimonials: Testimonial[] = [
   {
     id: "8",
     name: "Janet Afehomo",
-    role: "Content Team",
+    role: "Social Media/Content Marketing",
     country: "Nigeria",
     countryFlag: "ng",
     image: Janet,
     linkedin:
-      "https://www.linkedin.com/in/janet-afehomo-453a4a1b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "https://www.linkedin.com/in/janet-afehomo-453a4a1b3",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -155,11 +156,11 @@ export const testimonials: Testimonial[] = [
   {
     id: "10",
     name: "Agnes Ekong ",
-    role: "Content Team",
+    role: "Social Media/Content Marketing",
     country: "Nigeria",
     countryFlag: "ng",
     image: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/agnes-ekong-60591a138/",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -173,7 +174,7 @@ export const testimonials: Testimonial[] = [
     countryFlag: "ng",
     image: "",
     linkedin:
-      "https://www.linkedin.com/in/deborah-ogunjobi-b1396425a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "https://www.linkedin.com/in/deborah-ogunjobi-b1396425a",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -197,7 +198,7 @@ export const testimonials: Testimonial[] = [
     country: "Nigeria",
     countryFlag: "ng",
     image: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/rejoice-orauno-6b084a204/",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -216,12 +217,12 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "15",
-    name: "Praise Assam Etuk ",
-    role: "Content Team",
+    name: "Praise Assam Etuk",
+    role: "Social Media/Content Marketing",
     country: "Nigeria",
     countryFlag: "ng",
     image: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/praise-assam-648185396/",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -229,7 +230,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "16",
     name: "Adejayan Esther Oluwanike",
-    role: "Content Team",
+    role: "Social Media/Content Marketing",
     country: "Nigeria",
     countryFlag: "ng",
     image: Adejayan,
@@ -253,11 +254,11 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "18",
-    name: "Aminat Bankole ",
+    name: "Aminat Bankole",
     role: "Data Analysis",
     country: "Nigeria",
     countryFlag: "ng",
-    image: "/interns images/Aminat Bankole  Passport - Aminat Bankole.JPG",
+    image: Aminat,
     linkedin: "http://www.linkedin.com/in/aminat-bankole-0b8071188",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -266,12 +267,12 @@ export const testimonials: Testimonial[] = [
   {
     id: "19",
     name: "Adefemi Damola",
-    role: "Content Team",
+    role: "Social Media/Content Marketing",
     country: "Nigeria",
     countryFlag: "ng",
     image: Adefemi,
     linkedin:
-      "https://www.linkedin.com/in/damola-adefemi-1396112a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "https://www.linkedin.com/in/damola-adefemi-1396112a1",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -283,7 +284,7 @@ export const testimonials: Testimonial[] = [
     country: "Nigeria",
     countryFlag: "ng",
     image: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/bobbai-thomas/",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -291,11 +292,11 @@ export const testimonials: Testimonial[] = [
   {
     id: "21",
     name: "Chioma, Favour Paul-Chike",
-    role: "Content Team",
+    role: "Social Media/Content Marketing",
     country: "Nigeria",
     countryFlag: "ng",
-    image: "",
-    linkedin: "",
+    image: chioma,
+    linkedin: "https://www.linkedin.com/in/chioma-favour-paul-chike-bb23ba363/",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -308,7 +309,7 @@ export const testimonials: Testimonial[] = [
     country: "Nigeria",
     countryFlag: "ng",
     image: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/george-bassey-6a0a57239/",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -359,7 +360,7 @@ export const testimonials: Testimonial[] = [
     countryFlag: "ng",
     image: Faith,
     linkedin:
-      "https://www.linkedin.com/in/kolade-faith-aramide-15ba1637a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "https://www.linkedin.com/in/kolade-faith-aramide-15ba1637a",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -409,8 +410,7 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image:
-      "/interns images/tmp_6d65ad58-4ff7-40f9-bcdd-403de5ad481d - SAMUEL DANIA.jpeg",
+    image: SAMUEL,
     linkedin: "http://linkedin.com/in/samueldania",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
@@ -423,7 +423,7 @@ export const testimonials: Testimonial[] = [
     country: "Nigeria",
     countryFlag: "ng",
     image: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/joseph-ogunsuada-236aa9259/",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -540,12 +540,12 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "41",
-    name: "Nameti Hezekiah Charlie ",
+    name: "Nameti Hezekiah Charlie",
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
     image: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/nameti-charlie-6a27692b5/",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
     cohort: "2025-Q2",
@@ -579,7 +579,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "44",
     name: "Ruth Abuh",
-    role: "Content Team",
+    role: "Social Media/Content Marketing",
     country: "Nigeria",
     countryFlag: "ng",
     image: "/interns images/IMG_1080~2 - Ruth Abuh.JPG",
@@ -591,7 +591,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "45",
     name: "Nwokolobia Onyedikachuwku Divine",
-    role: "Content Team",
+    role: "Social Media/Content Marketing",
     country: "Nigeria",
     countryFlag: "ng",
     image: "",
