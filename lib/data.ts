@@ -732,7 +732,7 @@ export const projects: InternProject[] = [
   },
   {
     id: "2",
-    title: "Goldies",
+    title: "Cake App",
     description:
       "Advanced analytics platform for tracking business metrics with real-time data visualization.",
     image:
@@ -742,18 +742,18 @@ export const projects: InternProject[] = [
     internCount: 3,
     link: "https://goldies-frontend-v3.vercel.app/",
   },
-  // {
-  //   id: "3",
-  //   title: "Mobile Learning Platform",
-  //   description:
-  //     "An innovative platform making tech education accessible to students across Africa via mobile.",
-  //   image:
-  //     "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //   technologies: ["React Native", "Firebase", "Node.js"],
-  //   cohort: "2024-Q2",
-  //   internCount: 3,
-  //   link: "#",
-  // },
+  {
+    id: "3",
+    title: "TeamIQ",
+    description:
+      "An innovative platform making tech education accessible to students across Africa via mobile.",
+    image:
+      "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=800",
+    technologies: ["React Native", "Firebase", "Node.js"],
+    cohort: "2025-Q2",
+    internCount: 3,
+    link: "#",
+  },
   // {
   //   id: "4",
   //   title: "Community Forum & Marketplace",

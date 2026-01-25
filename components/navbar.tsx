@@ -15,7 +15,7 @@ const navLinks = [
   { href: '/showcase', label: 'Showcase' },
   { href: '/resources', label: 'Resources' },
   // { href: '/partnerships', label: 'Partners' },
-  { href: '/blog', label: 'Blog' },
+  { href: '/community', label: 'Community' },
   // { href: '/apply', label: 'Apply' },
   { href: '/contact', label: 'Contact' },
 ];

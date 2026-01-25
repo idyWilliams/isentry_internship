@@ -50,7 +50,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         <div className="container absolute bottom-0 left-0 right-0 mx-auto px-4 pb-8 sm:px-6 lg:px-8">
-          <Link href="/blog">
+          <Link href="/community">
             <Button
               variant="ghost"
               size="sm"

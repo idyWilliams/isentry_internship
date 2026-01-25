@@ -10,7 +10,7 @@ const quickLinks = [
   { href: '/showcase', label: 'Showcase' },
   { href: '/resources', label: 'Resources' },
   { href: '/partnerships', label: 'Partners' },
-  { href: '/blog', label: 'Blog' },
+  { href: '/community', label: 'Community' },
   { href: '/apply', label: 'Apply' },
 ];
 
@@ -97,7 +97,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-400">
               <Link href="">internship@isentrytechnologies.com</Link>
               <li>Lagos, Nigeria (Remote Program)</li>
-              
+
             </ul>
           </div>
         </div>

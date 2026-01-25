@@ -314,7 +314,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10"
+                  className="bg-white text-[#0D3B66] hover:bg-white/90"
                 >
                   Get In Touch
                 </Button>
