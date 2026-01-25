@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Linkedin, Twitter, Instagram, Github, Facebook, X } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Twitter, Instagram, Github, Facebook } from 'lucide-react';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -56,13 +56,27 @@ type ContactFormValues = yup.InferType<typeof contactSchema>;
 
 const socialLinks = [
   { icon: Linkedin, name: 'LinkedIn', url: SOCIAL_LINKS.linkedin },
-  { icon: X, name: 'Twitter', url: SOCIAL_LINKS.x },
+  {
+    icon: (props: any) => (
+      <svg
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        {...props}
+      >
+        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+      </svg>
+    ),
+    name: 'Twitter',
+    url: SOCIAL_LINKS.x,
+  },
   { icon: Instagram, name: 'Instagram', url: SOCIAL_LINKS.instagram },
   { icon: Facebook, name: 'Facebook', url: SOCIAL_LINKS.facebook },
 ];
 
 
-  
+
 export default function Contact() {
 
   const {
@@ -78,8 +92,8 @@ export default function Contact() {
     const mailtoLink = `mailto:${CONTACT_INFO.email}
       ?subject=${encodeURIComponent(data.subject)}
       &body=${encodeURIComponent(
-        `Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`
-      )}`;
+      `Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`
+    )}`;
 
     window.location.href = mailtoLink;
     reset();
