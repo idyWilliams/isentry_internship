@@ -18,7 +18,7 @@ import Aminat from "./../public/interns images/aminat-bankole.jpeg";
 import BSY from "./../public/images/team/BSY.jpg";
 import Christabel from "./../public/interns images/1757934584213 - Christabel Nzekwe.jpg";
 import Faith from "./../public/interns images/20240920_163231 - Faith Kolade.jpg";
-import Mattia from "./../public/interns images/20250724_103912 - Mattia Lavai.jpg";
+// import Mattia from "./../public/interns images/20250724_103912 - Mattia Lavai.jpg";
 import Adeola from "./../public/interns images/20250906_181856 - Omomowo Adeola.png";
 import Aishat from "./../public/interns images/IMG_4700 - Aishat Yusuf.jpeg";
 import Emmanuel from "./../public/interns images/IMG-20250422-WA0056 - Emmanuel Adeleke.jpg";
@@ -333,7 +333,7 @@ export const testimonials: Testimonial[] = [
     role: "Frontend Developer",
     country: "Sierra Leon",
     countryFlag: "sl",
-    image: Mattia,
+    image: "",
     linkedin: "https://www.linkedin.com/in/lavaimattia877",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
     year: "2025",
