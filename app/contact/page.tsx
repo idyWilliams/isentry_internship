@@ -6,6 +6,7 @@ import { Mail, MapPin, Linkedin, Twitter, Instagram, Github, Facebook } from 'lu
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { toast } from "sonner";
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -88,37 +89,36 @@ export default function Contact() {
     resolver: yupResolver(contactSchema),
   });
   /* ------------------ Submit Handler ------------------ */
-  const onSubmit = (data: ContactFormValues) => {
-    const mailtoLink = `mailto:${CONTACT_INFO.email}
-      ?subject=${encodeURIComponent(data.subject)}
-      &body=${encodeURIComponent(
-      `Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`
-    )}`;
+  const onSubmit = async (data: ContactFormValues) => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
 
-    window.location.href = mailtoLink;
-    reset();
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to send message');
+      }
+
+      toast.success("Message sent successfully!", {
+        description: "We'll get back to you as soon as possible.",
+      });
+      reset();
+    } catch (error: any) {
+      console.error('Submission error:', error);
+      toast.error("Failed to send message", {
+        description: error.message || "Please try again later or contact us directly via email.",
+      });
+    }
   };
 
 
-  // const [formData, setFormData] = useState({
-  //   name: "",
-  //   email: "",
-  //   subject: "",
-  //   message: "",
-  // });
 
-  // const handleSubmit = (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   const mailtoLink = `mailto:${CONTACT_INFO.email}?subject=Contact from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(formData.message)}%0D%0A%0D%0AFrom: ${encodeURIComponent(formData.email)}`;
-  //   window.location.href = mailtoLink;
-  // };
-
-  // const handleChange = (
-  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  // ) => {
-  //   const { name, value } = e.target;
-  //   setFormData((prev) => ({ ...prev, [name]: value }));
-  // };
 
   return (
     <div className="flex flex-col">
