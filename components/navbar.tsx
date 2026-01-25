@@ -65,7 +65,7 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center space-x-2 md:hidden">
-            <button
+            {/* <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="rounded-md p-2 text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
             >
@@ -74,7 +74,7 @@ export function Navbar() {
               ) : (
                 <Moon className="h-5 w-5" />
               )}
-            </button>
+            </button> */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="rounded-md p-2 text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
