@@ -3,12 +3,14 @@ import { Resend } from 'resend';
 
 // Initialize Resend with the API key from environment variables
 // Make sure to add RESEND_API_KEY to your .env file
-const resend = new Resend(process.env.RESEND_API_KEY);
+// const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { name, email, subject, message } = body;
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     // Basic validation
     if (!name || !email || !subject || !message) {
