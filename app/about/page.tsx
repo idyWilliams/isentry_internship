@@ -13,7 +13,7 @@ import { Target, Heart, TrendingUp } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 // --- DYNAMIC TIMELINE DATA ---
-export const getTimeline = () => {
+const getTimeline = () => {
   const baseTimeline = [
     {
       year: "2023",
@@ -45,7 +45,7 @@ export const getTimeline = () => {
 };
 
 // --- VALUES DATA (Static) ---
-export const values = [
+const values = [
   {
     icon: Target,
     title: "Mission",

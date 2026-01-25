@@ -31,7 +31,7 @@ import Olayele from "./../public/interns images/My Picture New 1 - olaleye ifeol
 import Esther from "./../public/interns images/IMG_20200419_151340_1_1663943858802 - ESTHER FAMAKINWA.jpg";
 import Musa from "./../public/interns images/IMG-20230911-WA0077 - Musa Saidu Auna.jpg";
 import John from "./../public/interns images/JPEG_20250722_172756_7105081795096905677 - Ibhaluobe Eichie.jpg";
-import Waheed from "./../public/interns images/Screenshot_20250430-214002 - waheed sodiq.jpg";
+// import Waheed from "./../public/interns images/Screenshot_20250430-214002 - waheed sodiq.jpg";
 import Adefemi from "./../public/interns images/FB_IMG_1752996434061 - ADEDAMOLA ADEFEMI.jpg";
 import Samuel from "./../public/interns images/Profile picture - Samuel Adewale.jpg";
 import SAMUEL from "./../public/interns images/tmp_6d65ad58-4ff7-40f9-bcdd-403de5ad481d - SAMUEL DANIA.jpeg"
@@ -446,7 +446,7 @@ export const testimonials: Testimonial[] = [
     role: "QA Engineer",
     country: "Nigeria",
     countryFlag: "ng",
-    image: Waheed,
+    image: "",
     linkedin:
       "https://www.linkedin.com/in/sodiq-waheed?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     text: "iSentry gave me industry connections that helped me land my first job. The network of mentors and peers is invaluable.",
